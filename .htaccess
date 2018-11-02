@@ -1,0 +1,4 @@
+php_value display_errors 1
+Options All +Indexes
+AddDefaultCharset UTF-8
+DirectoryIndex .list.php
