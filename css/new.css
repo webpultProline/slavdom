@@ -319,6 +319,9 @@
 	transition: border-color .35s;
 	cursor: pointer;
 }
+._new-delivery_carouselImage > img {
+	display: block;
+}
 ._new-delivery_carouselItem.active ._new-delivery_carouselImage {
 	border-color: rgba(153,153,153,0.6);
 }
