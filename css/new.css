@@ -206,12 +206,25 @@
   align-self: stretch;
 }
 
+
+.offset-top_65 {
+	padding-top: 65px;
+}
 .offset-top_70 {
 	padding-top: 70px;
 }
 
+.offset-bottom_13 {
+	padding-bottom: 13px;
+}
+
 .ask-form .button {
-    margin-top: 17px;
+    margin-top: 21px;
+	width: 233px;
+	text-align: center;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: 15px
 }
 .typography ul li {
 	padding-bottom: 0
@@ -222,6 +235,28 @@
 .title-section--small {
     font-size: 25px;
     margin-bottom: 8px;
+}
+
+.new_typography {
+	font-size: 15px
+}
+/*
+====================================================
+фиксы
+====================================================
+*/
+.page-nav__link {
+	text-decoration: none!important;
+	color: #7c7c7c;
+}
+.page-nav__link:hover, .page-nav__link._current {
+	color: #d70022;
+}
+.page-nav__link > span {
+	border-bottom: 1px solid #7c7c7c;
+}
+.page-nav__link._current > span , .page-nav__link:hover > span {
+	border-bottom-color: #d70022;
 }
 /*
 ---------------------------------------
@@ -258,7 +293,7 @@
 	margin-bottom: 45px
 }
 ._new-delivery_carouselTop {
-	height: 239px;
+	height: 242px;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -269,12 +304,12 @@
 	display: flex;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	-ms-flex-pack: center;
 	justify-content: center;
-	-ms-flex-align: start;
-	align-items: flex-start;
+	-ms-flex-align: center;
+	align-items: center;
 	
 	margin-bottom: 43px
 }
@@ -288,7 +323,7 @@
 	border-top: 1px dashed #cccccc;
 }
 ._new-delivery_carouselItem {
-	height: 238px;
+	height: 242px;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -314,7 +349,7 @@
 ._new-delivery_carouselItem:after {
 	position: absolute;
 	left: 50%;
-	bottom: -11px;
+	bottom: -10px;
 	height: 11px;
 	width: 22px;
 	background: transparent;
@@ -324,6 +359,14 @@
 ._new-delivery_carouselItem.active:after {
 	background: url(../img/new/delivery/arrow_selected_slide.svg) center no-repeat;
 	background-size: cover;
+}
+._new-delivery_carousel-delimiter {
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin: 0 10px;
+	width: 20%;
+	background-color: rgba(255,255,255,0.1);
+	height: 1px;
 }
 
 ._new-delivery_carouselImageContainer {
@@ -457,6 +500,31 @@
 	font-size: 15px;
 	line-height: 18px;
 }
+._new-delivery_carouselBot-text {
+	font-size: 22px;
+	color: #fff;
+	line-height: 26px;
+	padding-bottom: 15px;
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	margin-bottom: 13px
+}
+._new-delivery_carouselBot-text:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	background-color: rgba(255,255,255,0.21);
+	content: '';
+	width: 86px
+}
+._new-delivery_carouselBot-title {
+	font-size: 17px;
+	font-weight: 300;
+	display: block;
+}
 
 ._new-delivery_carouselBot .slick-dots {
 	margin: 0;
@@ -505,7 +573,7 @@
 	justify-content: flex-start;
 	-ms-flex-align: stretch;
 	align-items: stretch;
-	margin: 33px 0 39px
+	margin: 46px 0 35px
 }
 ._new_delivery_advantages > div {
 	min-height: 105px;
@@ -549,7 +617,7 @@
 }
 
 ._new_pickups-navs {
-	margin-top: 30px;
+	margin-top: 20px;
 	border-bottom: 1px solid #dfdfdf
 }
 ._new_pickups-navs .inner:not(.directory) {
@@ -564,6 +632,23 @@
 	-ms-flex-align: center;
 	align-items: center;
 }
+
+._new_pickups-nav {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+}
+._new_pickups-nav-indicator {
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	
+	transition: all .35s;
+	height: 2px;
+	background-color: #d70022;
+}
+
 ._new_pickups-navs ul {
 	margin: 0;
 	padding: 0;
@@ -578,9 +663,9 @@
 	position: relative;
 	left: 0;
 	top: 0;
-	margin-right: 49px;
+	margin-right: 43px;
 }
-._new_pickups-navs ul > li.active:after {
+/*._new_pickups-navs ul > li.active:after {
 	position: absolute;
 	left: 0;
 	bottom: -1px;
@@ -588,7 +673,7 @@
 	width: 100%;
 	background-color: #d70022;
 	content: '';
-}
+}*/
 ._new_pickups-navs ul > li > button {
 	background: transparent;
 	border: 0;
@@ -600,9 +685,10 @@
 	color: #333333;
 	font-size: 17px;
 	display: inline;
+	transition: color .35s;
 }
 ._new_pickups-navs ul > li:last-child {
-	margin-right: 0;
+	margin-right: -20px;
 }
 ._new_pickups-navs ul > li > button > span {
 	border-bottom: 1px dotted #333333
@@ -623,6 +709,13 @@
 	left: 0;
 	top: 0;
 }
+._new_pickup-body-top {
+	box-shadow: 0 2px 2px 0 rgba(110,110,110,0.34);
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
 ._new_pickup-body.init {
 	display: none;
 }
@@ -630,8 +723,441 @@
 	display: block;
 	opacity: 1;
 }
+._new_pickups-body #contacts-map-msk, ._new_pickups-body #contacts-map-spb {
+	height: 414px
+}
 ._new_pickup-body ._new_pickup-map {
 	display: block;
 	width: 100%;
 	height: 678px;
+}
+
+
+
+._new_pickups-infoTable {
+	margin: 0 -65px;
+	padding-bottom: 32px;
+	
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+._new_pickups-infoTable > p {
+	margin: 29px 0 17px 0;
+	line-height: 1;
+	color: rgba(21,27,35,0.8);
+	font-size: 15px;
+	width: 100%;
+	display: block;
+	padding: 0 65px
+}
+._new_pickups-info {
+	display: block;
+	width: 50%;
+	padding: 0 65px;
+}
+._new_pickups-info > p {
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 16px 0;
+	
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+._new_pickups-info > p:last-child {
+	border-bottom: 0
+}
+._new_pickups-info > p b {
+	width: 190px;
+	line-height: 24px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #000000;
+	display: block;
+}
+._new_pickups-info > p span {
+	width: calc(100% - 190px);
+	line-height: 24px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.8);
+	display: inline;
+}
+._new_pickups-info > p span > span {
+	border-bottom: 1px solid #cacaca;
+	word-break: break-word;
+}
+._new_pickups-info > p a {
+	text-decoration: none!important;
+}
+._new_pickups-info > p a span {
+	border-bottom: 1px solid #cc2229;
+	color: #cc2229;
+}
+._new_pickups-info > p a:hover span {
+	border-bottom: 0
+}
+
+
+
+.new_hidden_block {
+	display: none!important;
+}
+
+@media(min-width: 992px){
+	/*
+	---------------------------------------
+	Страница доставки и оплаты
+	---------------------------------------
+	*/
+	._new-delivery_carousel {
+		background-image: none!important;
+	}
+}
+
+
+@media(max-width: 1231px){
+	/*
+	---------------------------------------
+	Страница доставки и оплаты
+	---------------------------------------
+	*/
+	._new-delivery_carouselItem , ._new-delivery_carouselTop {
+		height: 280px;
+	}
+}
+@media(max-width: 991px){
+	.new_hidden_tablet {
+		display: none!important
+	}
+	.new_show_tablet-flex {
+		display: -ms-flexbox!important;
+		display: flex!important;
+	}
+	.new_show_tablet-block {
+		display: block!important;
+	}
+	
+	.new_typography {
+		font-size: 13px
+	}
+	.new_typography h3 {
+		font-size: 15.75px;
+	}
+	.new_typography p {
+		line-height: 19px
+	}
+	
+	.ask-form.offset-top .title-section--small {
+		font-size: 15.75px;
+		line-height: 22px;
+	}
+	
+	.newScrollHidden {
+		display: none;
+	}
+	.newScrollHidden-btn {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		background: transparent;
+		outline: none;
+		cursor: pointer;
+		color: #737373;
+		font-size: 13px;
+		text-decoration: none;
+		line-height: 1;
+	}
+	.newScrollHidden-btn > span {
+		border-bottom: 1px dotted #737373
+	}
+	/*
+	---------------------------------------
+	Страница доставки и оплаты
+	---------------------------------------
+	
+	ffffff - 40%
+	
+	*/ 
+	.new_after-carousel {
+		border-bottom: 1px solid #e6e6e6;
+		padding-bottom: 4px;
+		margin-bottom: 14px;
+	}
+	
+	._new-delivery_carousel {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 10px;
+		position: relative;
+		left: 0;
+		top: 0;
+		transition: background-image .35s;
+		border-bottom: 0;
+		margin-bottom: 15px
+	}
+	._new-delivery_carousel:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.85);
+		z-index: 1;
+		content: '';
+	}
+	._new-delivery_carousel .inner {
+		width: 100%;
+		max-width: none;
+		border: 1px solid rgba(255,255,255,0.4);
+		padding: 25px 25px 21px;
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 2;
+	}
+	._new-delivery_carouselTop {
+		border-bottom: 0;
+		margin-bottom: 14px;
+	}
+	._new-delivery_carouselTop:before {
+		display: none;
+	}
+	._new-delivery_carouselItem, ._new-delivery_carouselTop {
+		height: auto;
+	}
+	._new-delivery_carouselItem {
+		padding: 0;
+	}
+	._new-delivery_carouselImageContainer {
+		margin-bottom: 0;
+		background-color: transparent;
+		width: auto;
+	}
+	._new-delivery_carouselImage {
+		border: 0!important;
+		width: auto;
+		height: auto;
+	}
+	._new-delivery_carouselImage[class*="icon-"]:before {
+		color: rgba(255,255,255,0.3);
+	}
+	._new-delivery_carouselItem.active ._new-delivery_carouselImage:before {
+		color: #d70022
+	}
+	
+	._new-delivery_carouselImage.icon-1:before {
+		font-size: 32px;
+	}
+	._new-delivery_carouselImage.icon-2:before {
+		font-size: 33px;
+	}
+	._new-delivery_carouselImage.icon-3:before {
+		font-size: 32px;
+	}
+	._new-delivery_carouselImage.icon-4:before {
+		font-size: 32px;
+	}
+	._new-delivery_carouselImage.icon-5:before {
+		font-size: 36px;
+	}
+	
+	._new-delivery_carouselItem ._new-delivery_carouselImage:after , ._new-delivery_carouselItem:after {
+		display: none!important
+	}
+	._new-delivery_carouselBot {
+		margin-bottom: 0
+	}
+	._new-delivery_carouselBot p {
+		margin-bottom: 18px;
+		color: #fff;
+		font-size: 13px;
+		line-height: 21px;
+	}
+	._new-delivery_carouselBot .slick-dots {
+		text-align: left;
+	}
+	._new-delivery_carouselBot .slick-dots > li > button {
+		border: 1px solid rgba(255,255,255,0.45)
+	}
+	._new-delivery_carouselBot .slick-dots > li.slick-active > button {
+		border-color: #fff;
+		background-color: #fff;
+	}
+	
+	
+	._new_delivery_advantages {
+		margin-top: 7px;
+		margin-bottom: 4px
+	}
+	._new_delivery_advantages > div {
+		min-height: auto;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	._new_delivery_advantages > div > div {
+		width: 50px;
+	}
+	._new_delivery_advantages p {
+		font-size: 13px;
+	}
+	._new_delivery_advantages p > br {
+		display: none
+	}
+	._new_delivery_advantages > div._new_delivery_advantages-delimiter {
+		padding: 0
+	}
+	._new_delivery_advantages-delimiter:after {
+		width: 100%;
+		height: 1px;
+	}
+	._new_delivery_advantages-paperplane > img {
+		width: 27px;
+	}
+	._new_delivery_advantages-truck > img {
+		width: 31px;
+	}
+	._new_delivery_advantages-people > img {
+		width: 32px;
+	}
+	._new_delivery_advantages-wagon > img {
+		width: 25px;
+	}
+	
+	
+	._new_pickups-navs .title-section--small {
+		font-size: 15.75px;
+	}
+	
+	._new_pickups-infoTable {
+		margin-left: 0;
+		margin-right: 0
+	}
+	._new_pickups-infoTable > p {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	._new_pickups-info {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%
+	}
+	._new_pickups-info > p:last-child {
+		border-bottom: 1px solid #e5e5e5;
+	}
+	._new_pickups-info:last-child > p:last-child {
+		border-bottom: 0
+	}
+	._new_pickups-infoTable > p {
+		display: none;
+	}
+	
+	._new_pickups-info > p span , ._new_pickups-info > p b {
+		font-size: 13px;
+		line-height: 19px
+	}
+}
+@media(max-width: 768px){
+	/*
+	---------------------------------------
+	Страница доставки и оплаты
+	---------------------------------------
+	*/ 
+	._new_pickups-navs ul > li {
+		padding: 0;
+		margin-right: 3px;
+	}
+	._new_pickups-navs ul > li:last-child {
+		margin-right: 0
+	}
+	._new_pickups-navs ul > li > button {
+		height: 40px;
+		line-height: 38px;
+		border: 1px solid #999999;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 2px;
+		font-size: 13px;
+	}
+	._new_pickups-navs ul > li:nth-child(2) > button {
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	._new_pickups-navs ul > li.active > button {
+		border-color: #d70022;
+	}
+	._new_pickups-navs ul > li > button > span {
+		border-bottom: 0
+	}
+	._new_pickups-nav-indicator {
+		display: none;
+	}
+	._new_pickups-navs {
+		border-bottom: 0
+	}
+	._new_pickups-info > p b , ._new_pickups-info > p span {
+		width: 100%;
+	}
+}
+@media(max-width: 500px){
+	.new_typography ul li {
+		padding-left: 13px;
+	}
+	.new_typography ul li::before {
+		left: 3px;
+	}
+	/*
+	---------------------------------------
+	Страница доставки и оплаты
+	---------------------------------------
+	*/ 
+	._new_pickups-navs .title-section--small {
+		width: 100%;
+		margin-bottom: 15px
+	}
+	._new_pickups-infoTable {
+		padding-bottom: 12px
+	}
+	._new_pickups-body #contacts-map-msk, ._new_pickups-body #contacts-map-spb , ._new_pickup-body ._new_pickup-map {
+		height: 311px;
+	}
+	.new_after_map {
+		padding-top: 17px
+	}
+	
+	
+	.ask-form .button {
+		width: 100%
+	}
+	.ask-form.offset-top .title-section--small {
+		margin-bottom: 4px;
+	}
+	.ask-form .button {
+		margin-top: 6px;
+	}
 }
