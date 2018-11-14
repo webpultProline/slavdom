@@ -271,6 +271,176 @@
 .new_typography {
 	font-size: 15px
 }
+
+.new--user-title {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 14px
+}
+.new--user-subtitle {
+	margin: 15px 0 27px;
+	line-height: 1;
+	color: #010101;
+	font-size: 17px;
+	font-weight: 400;
+	display: block;
+	width: 100%
+}
+@media(min-width: 991px){
+	.order-form__text-group label.new--pasword_label , .new--pasword_label {
+		width: 488px;
+		-ms-flex-preferred-size: 488px;
+		flex-basis: 488px;
+	}
+	.new--pasword_label .new--indicator_input {
+		width: 261px;
+		-ms-flex-preferred-size: 261px;
+		flex-basis: 261px;
+	}
+	.order-form__text-group label.new--pasword_label .order-form__text-label , .new--pasword_label .order-form__text-label {
+		width: 227px;
+		-ms-flex-preferred-size: 227px;
+		flex-basis: 227px;
+	}
+}
+.new--indicator_input {
+	position: relative;
+	left: 0;
+	top: 0;
+    width: calc(100% - 133px);
+    -ms-flex-preferred-size: calc(100% - 133px);
+    flex-basis: calc(100% - 133px);
+}
+.new--indicator_input > input , .order-form__text-group .new--indicator_input .order-form__input {
+	width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+.order-form__text-group label.new--pasword_label input[type="password"] , .new--pasword_label input[type="password"] {
+	width: 100%;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+}
+.new--indicator_input input , .order-form__text-group .new--indicator_input .order-form__input {
+	padding-right: 50px;
+}
+.new--indicator_input.error input , .order-form__text-group .new--indicator_input.error .order-form__input {
+	border-color: #e5576d;
+}
+.new--indicator_ {
+	position: absolute;
+	right: 24px;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 16px;
+	width: 16px;
+}
+.new--indicator_ > span {
+	position: absolute;
+	transition: background-color .35s, width .35s;
+}
+.new--indicator_ > span:first-child {
+	left: 0;
+	bottom: 0;
+	width: 4px;
+	height: 4px;
+	border-bottom: 1px solid #d0d0d0;
+	border-left: 1px solid #d0d0d0;
+}
+.new--indicator_ > span:nth-child(2){
+    width: 14px;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: 2px;
+    bottom: 5px;
+    transform: rotate(-45deg);
+}
+.new--indicator_ > span:nth-child(3){
+    width: 14px;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: -1px;
+    bottom: 8px;
+    transform: rotate(-45deg);
+}
+.new--indicator_ > span:nth-child(4){
+    width: 4px;
+    height: 1px;
+    background-color: #d0d0d0;
+    left: 8px;
+    top: 6px;
+    transform: rotate(45deg);
+}
+.new--indicator_ > span:nth-child(5){
+	width: 4px;
+	height: 1px;
+	background-color: #d0d0d0;
+	left: 10px;
+	top: 4px;
+	transform: rotate(45deg);
+}
+.new--indicator_ > span:nth-child(6){
+	width: 0;
+	height: 1px;
+	background-color: #dd2744;
+	left: -3px;
+	bottom: 3px;
+	transform: rotate(45deg);
+}
+.new--indicator_.checked > span:nth-child(1) {
+	opacity: 0;
+}
+.new--indicator_.checked > span:nth-child(2) {
+	background-color: #dd2744;
+}
+.new--indicator_.checked > span:nth-child(3){
+	width: 0;
+}
+.new--indicator_.checked > span:nth-child(4){
+	width: 0;
+}
+.new--indicator_.checked > span:nth-child(5){
+	width: 0;
+}
+.new--indicator_.checked > span:nth-child(6){
+	width: 8px;
+}
+
+
+
+
+.new--tabs_btn {
+	font-size: 14px;
+	color: #151b23;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 26px;
+	padding-right: 26px;
+	height: 62px;
+	line-height: 62px;
+	background: transparent;
+	border: 1px solid #e8e8e8;
+	margin-bottom: -1px;
+	outline: none;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	text-align: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.new--tabs_btn.active {
+	font-weight: 500;
+	color: #d70022;
+	border-color: #8c8c8c;
+	z-index: 2;
+}
+.new--tabs_btn.active .list-catalog__chevrone {
+	fill: #d70022;
+}
 /*
 ====================================================
 фиксы
@@ -288,6 +458,15 @@
 }
 .page-nav__link._current > span , .page-nav__link:hover > span {
 	border-bottom-color: #d70022;
+}
+
+.order-form__text-label {
+	font-weight: 400;
+	text-align: left;
+	color: rgba(0,0,0,0.7);
+}
+.order-form__text-group .order-form__input {
+	font-weight: 400;
 }
 /*
 ---------------------------------------

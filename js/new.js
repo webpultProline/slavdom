@@ -61,4 +61,19 @@ $(function(){
 			$(this).html('<span>Узнать больше</span>');
 		}
 	});
+	///
+	///
+	///
+	function setStatusForInput(self){
+		if(self.val().length < 1 || self.val() == ''){
+			self.parent().find('.new--indicator_').removeClass('checked');
+			self.parent().addClass('error');
+		} else {
+			self.parent().find('.new--indicator_').addClass('checked');
+			self.parent().removeClass('error');
+		}
+	}
+	$('.new--indicator_input input').change(function(){
+		setStatusForInput($(this))
+	});
 });
