@@ -289,9 +289,9 @@
 }
 @media(min-width: 991px){
 	.order-form__text-group label.new--pasword_label , .new--pasword_label {
-		width: 488px;
-		-ms-flex-preferred-size: 488px;
-		flex-basis: 488px;
+		width: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
 	}
 	.new--pasword_label .new--indicator_input {
 		width: 261px;
@@ -304,6 +304,46 @@
 		flex-basis: 227px;
 	}
 }
+
+
+.new--user-row {
+	display: block;
+	width: 747px;
+}
+.new_label--inputs {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+	margin-bottom: 16px;
+}
+.new_label--title {
+	width: 133px;
+	-ms-flex-preferred-size: 133px;
+	flex-basis: 133px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 400;
+	text-align: left;
+	color: rgba(0,0,0,0.7);
+}
+.new_label--inputs input {
+    width: calc(100% - 133px);
+    -ms-flex-preferred-size: calc(100% - 133px);
+    flex-basis: calc(100% - 133px);
+    border: 1px solid #ababab;
+    outline: none;
+    box-shadow: none;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 14px 28px;
+	font-weight: 400;
+	background: url(../img/new/user/pen.svg) center right 25px no-repeat;
+	background-size: 16px 16px;
+}
+
+
+
+
 .new--indicator_input {
 	position: relative;
 	left: 0;
