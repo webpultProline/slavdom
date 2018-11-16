@@ -282,150 +282,329 @@
         <div class="wrapper">
             <div class="top-page-links">
                 <div class="top-page-links__inner inner flex flex--a-start flex--j-between">
-                    <div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                    <div class="breadcrumbs new_hidden_tablet" itemscope itemtype="http://schema.org/BreadcrumbList">
                         <a href="./" class="breadcrumbs__link">Главная</a>
                         <span class="breadcrumbs__current-page">Личный кабинет</span>
+                    </div>
+                    <div class="breadcrumbs new_hidden_block new_show_tablet-block" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <a href="./" class="breadcrumbs__link">Главная</a>
+                        <a href="./" class="breadcrumbs__link">Личный кабинет</a>
+                        <span class="breadcrumbs__current-page"></span>
                     </div>
                 </div>
             </div>
 
             <div class="inner directory offset-bottom">
-				<h1 class="title-page">Личный кабинет</h1>
-				<div class="sidebar-and-blocks flex flex--j-between flex--a-start">
+				<h1 class="title-page new_hidden_tablet">Личный кабинет</h1>
+				<div class="sidebar-and-blocks flex flex--j-between flex--a-start user--page">
                     <div class="column-one-base sidebar">
-                        <button class="new--tabs_btn active">
+                        <a href="#user-main" class="new--tabs_btn new_hidden_tablet">
 							Общая информация
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
 							</svg>
-						</button>
-                        <button class="new--tabs_btn">
+						</a>
+                        <a href="#user-orders" class="new--tabs_btn new_hidden_tablet">
 							История заказов
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
 							</svg>
-						</button>
-                        <button class="new--tabs_btn">Выход</button>
+						</a>
+                        <button class="new--tabs_btn new_hidden_tablet">Выход</button>
+						
+						<div class="new_side--req_call_back">
+							<img src="img/new/user/req-call.svg" alt="" width="36">
+							<h2>Возникли вопросы?</h2>
+							<p>Позвоните нам по бесплатному номеру <a href="tel:8 (800) 333 51 51">8 (800) 333 51 51</a> <br>или оставьте заявку на обратный звонок</p>
+							<button class="button--border button--normal">Заказать обратный звонок</button>
+						</div>
                     </div>
 
                     <div class="column-one-invert">
-						<div class="page-nav__title new--user-title">Общая информация</div>
-						
-						<p class="new--user-subtitle">Персональные данные</p>
-						
-						<div class="new--user-row">
-							<label class="new_label--inputs flex flex--a-center flex--j-between">
-								<span class="new_label--title">Имя</span>
-								<input type="text" placeholder="Введите Ваши ФИО" name="" value="">
-							</label>
-						</div>
-						
-						<label class="flex flex--a-center flex--j-between">
-							<span class="order-form__text-label">Имя</span>
-							<span class="new--indicator_input">
-								<input type="text" class="order-form__input" placeholder="Введите Ваши ФИО" name="" value="">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
-						</label>
-						<label class="w-50 flex flex--a-center flex--j-between">
-							<span class="order-form__text-label">Телефон</span>
-							<span class="new--indicator_input">
-								<input type="tel" class="order-form__input form__input--phone-full" name="" value="" placeholder="+7 (___) ___-__-__">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
-						</label>
-						<label class="w-50 w-50--padding flex flex--a-center flex--j-between">
-							<span class="order-form__text-label">E-mail</span>
-							<span class="new--indicator_input">
-								<input type="email" class="order-form__input" name="" value="" placeholder="info@gmail.ru">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
-						</label>
-						
-						<p class="new--user-subtitle">Место проживания</p>
-						
-						<label class="w-50 flex flex--a-center flex--j-between">
-							<span class="order-form__text-label">Город</span>
-							<span class="new--indicator_input">
-								<input type="text" class="order-form__input" name="" value="" placeholder="Выберите город">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
-						</label>
-						<label class="flex flex--a-center flex--j-between">
-							<span class="order-form__text-label">Адрес</span>
-							<span class="new--indicator_input">
-								<input type="text" class="order-form__input" placeholder="Введите адрес" name="" value="">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
-						</label>
-						
-						<div class="page-nav__title new--user-title">Сменить пароль</div>
-						
-						<label class="new--pasword_label flex flex--a-center flex--j-start">
-							<span class="order-form__text-label">Новый пароль</span>
-							<span class="new--indicator_input">
-								<input type="password" class="order-form__input" name="" value="" placeholder="Новый пароль">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
-						</label>
-						<label class="new--pasword_label flex flex--a-center flex--j-start">
-							<span class="order-form__text-label">Повторите новый пароль</span>
-							<span class="new--indicator_input">
-								<input type="password" class="order-form__input" placeholder="Повторите новый пароль" name="" value="">
-								<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-							</span>
+						<div class="new--tabs" id="users--tabs">
+							<div class="new--tab" id="user-main">
+								<div class="new_hidden_block new_show_tablet-flex new--user-main__mobile d-flex flex-row flex-wrap justify-content-between align-items-center">
+									<h2 class="new--user-title">Общая информация</h2>
+									
+									<button class="user-box__sign-in header-top__text-color link link--h-acc">
+										<svg class="user-box__icon">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+										<span class="user-box__title">Выйти</span>
+									</button>
+									
+									<a href="#user-orders" class="new--tabs_btn-mobile">
+										История заказов
+										<svg class="list-catalog__chevrone">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
+										</svg>
+									</a>
+								</div>
+								
 							
-						</label>
-						
-						<button class="favorite-cards__fast-buy button button--border button--acc button--normal">Сменить пароль</button>
+								<form class="new--form_user">
+									<h2 class="new--user-title new_hidden_tablet">Общая информация</h2>
+									<h3 class="new--user-subtitle">Персональные данные</h3>
+									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
+										<label class="new_label--inputs flex flex--a-center flex--j-between">
+											<span class="new_label--title">Имя</span>
+											<input type="text" placeholder="Введите Ваши ФИО" name="" value="">
+										</label>
+									</div>
+									<div class="new--user-row new--w50 d-flex flex-row flex-wrap justify-content-between align-items-center">
+										<label class="new_label--inputs new--w50 flex flex--a-center flex--j-between">
+											<span class="new_label--title">Телефон</span>
+											<input type="tel" placeholder="+7 (___) ___-__-__" name="" value="" class="form__input--phone-full">
+										</label>
+										<label class="new_label--inputs new--w50 flex flex--a-center flex--j-between">
+											<span class="new_label--title">E-mail</span>
+											<input type="email" placeholder="info@gmail.ru" name="" value="">
+										</label>
+									</div>
+									<h3 class="new--user-subtitle">Место проживания</h3>
+									<div class="new--user-row new--w50 d-flex flex-row flex-wrap justify-content-between align-items-center">
+										<label class="new_label--inputs new--w50 flex flex--a-center flex--j-between">
+											<span class="new_label--title">Город</span>
+											<input type="text" placeholder="Выберите город" name="" value="">
+										</label>
+									</div>
+									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
+										<label class="new_label--inputs flex flex--a-center flex--j-between">
+											<span class="new_label--title">Адрес</span>
+											<input type="text" placeholder="Введите адрес" name="" value="">
+										</label>
+									</div>
+									<h2 class="new--user-title">Сменить пароль</h2>
+									
+									
+									
+									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
+										<label class="new_label--inputs new_label--inputs-password flex flex--a-center flex--j-between">
+											<span class="new_label--title">Новый пароль</span>
+											<span class="new--indicator_input">
+												<input type="password" name="" value="" placeholder="Новый пароль">
+												<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+											</span>
+										</label>
+									</div>
+									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
+										<label class="new_label--inputs new_label--inputs-password flex flex--a-center flex--j-between">
+											<span class="new_label--title">Повторите новый пароль</span>
+											<span class="new--indicator_input">
+												<input type="password" name="" value="" placeholder="Повторите новый пароль">
+												<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
+											</span>
+										</label>
+									</div>
+									<button class="button--border button--acc button--normal">Сменить пароль</button>
+								</form>
+							</div>
+							<div class="new--tab" id="user-orders">
+								<div class="new_hidden_block new_show_tablet-flex new--user-main__mobile d-flex flex-row flex-wrap justify-content-between align-items-center">
+									<h2 class="new--user-title">Личный кабинет</h2>
+									
+									<button class="user-box__sign-in header-top__text-color link link--h-acc">
+										<svg class="user-box__icon">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use>
+										</svg>
+										<span class="user-box__title">Выйти</span>
+									</button>
+									
+									<a href="#user-main" class="new--tabs_btn-mobile">
+										Общая информация
+										<svg class="list-catalog__chevrone">
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
+										</svg>
+									</a>
+								</div>
+								
+								<div class="new--user_orders-top">
+									<h2 class="new--user-title">История заказов</h2>
+									<div class="contacts__notices flex flex--a-center">
+										<span class="important important--red"></span>
+										<p class="typography">
+											<span class="text-c-red">Через сайт можно осуществить только полную оплату заказа</span> Для частичной оплаты заказа воспользуйтесь наличным расчетом
+										</p>
+									</div>
+								</div>
+								
+								<div class="new--user_orders-body">
+									<div class="new--user_orders-table_top">
+										<p class="new--user_order-table-section"><a href="#" class="active">№</a></p>
+										<p class="new--user_order-table-section"><a href="#">Статус</a></p>
+										<p class="new--user_order-table-section"><a href="#">Дата</a></p>
+										<p class="new--user_order-table-section"><a href="#">Стоимость</a></p>
+										<p class="new--user_order-table-section"><a href="#">Оплата</a></p>
+									</div>
+									
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--successfully">Принят</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата наличными</p>
+											<p class="new--paid_type-info">Не оплачен</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--successfully">Принят</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<a href="#" class="new--user_order-table-section new--paid_link">
+											Оплатить заказ
+										</a>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--successfully">Принят</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата картой</p>
+											<p class="new--paid_type-info">Оплачен</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--cancellation">Отменен</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата наличными</p>
+											<p class="new--paid_type-info">Не оплачен</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--successfully">Принят</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<a href="#" class="new--user_order-table-section new--paid_link">
+											Оплатить заказ
+										</a>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--cancellation">Отменен</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата наличными</p>
+											<p class="new--paid_type-info">Не оплачен</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--successfully">Принят</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<button class="new--paid_type-help"></button>
+											<p class="new--paid_type-title">Оплата картой</p>
+											<p class="new--paid_type-info">Частично</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--cancellation">Отменен</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата наличными</p>
+											<p class="new--paid_type-info">Не оплачен</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--successfully">Принят</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата картой</p>
+											<p class="new--paid_type-info">Оплачен</p>
+										</div>
+									</div>
+									<div class="new--user_order-table">
+										<div class="new--user_order-table-section">
+											<a href="#" ><span>Заказ №12873</span></a>
+										</div>
+										<p class="new--user_order-table-section new--cancellation">Отменен</p>
+										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
+										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
+										
+										<div class="new--user_order-table-section new--paid_type">
+											<p class="new--paid_type-title">Оплата наличными</p>
+											<p class="new--paid_type-info">Не оплачен</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="pagination-wrap flex flex--a-center">
+									<div class="pagination">
+										<a href="#" class="pagination__el pagination__el--disabled pagination__el--arr">
+											<svg class="pagination__icon">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-dche-l"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__el pagination__el--disabled pagination__el--arr">
+											<svg class="pagination__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-l"></use></svg>
+										</a>
+										<div class="pagination__page-numbs">
+											<a href="#" class="pagination__el _current">1</a>
+											<a href="#" class="pagination__el">2</a>
+											<a href="#" class="pagination__el">3</a>
+											<a href="#" class="pagination__el">4</a>
+											<a href="#" class="pagination__el">5</a>
+										</div>
+										<a href="#" class="pagination__el pagination__el--arr">
+											<svg class="pagination__icon">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
+											</svg>
+										</a>
+										<a href="#" class="pagination__el pagination__el--arr">
+											<svg class="pagination__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-dche-r"></use></svg>
+										</a>
+									</div>
+									<div class="pagination-num">
+										<span class="pagination-num__on-page">15</span>
+										<span class="pagination-num__total-page">из 130</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
                     </div>
                 </div>
 
-            </div>
-
-            <div class="inner contacts-mobile-menu">
-                <div class="contacts-mobile-menu__item">
-                    <a class="contacts-mobile-menu__link" href="/exchange.html">
-                        Обмен и возврат
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
-                <div class="contacts-mobile-menu__item">
-                    <a class="contacts-mobile-menu__link" href="/delivery.html">
-                        Доставка
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
-                <div class="contacts-mobile-menu__item">
-                    <a class="contacts-mobile-menu__link" href="#">
-                        Оплата	
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
-                <div class="contacts-mobile-menu__item">
-                    <a class="contacts-mobile-menu__link" href="/calculation_of_materials.html">
-                        Расчет материалов
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
-                <div class="contacts-mobile-menu__item _current">
-                    <a class="contacts-mobile-menu__link" href="/civil_and_erection_works.html">
-                        Строительно-монтажные работы
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
-                <div class="contacts-mobile-menu__item">
-                    <a class="contacts-mobile-menu__link" href="#">
-                        Резка кирпича	
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
-                <div class="contacts-mobile-menu__item">
-                    <a class="contacts-mobile-menu__link" href="#">
-                        Колеровка
-                        <svg class="pc-mobile-menu__chevrone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg>
-                    </a>
-                </div>
             </div>
 
         </div>
