@@ -88,7 +88,7 @@ $(function(){
 	///window.location.hash.replace("#","")
 	checkOpenTab('users--tabs',window.location.hash.replace("#",""));
 	
-	$('.new--tabs_btn , .new--tabs_btn-mobile').click(function(){
+	$('.new--tabs_btn-- , .new--tabs_btn-mobile').click(function(){
 		if(typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false && $(this).attr('href') != ''){
 			$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text('');
 			$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text($(this).text());
@@ -103,14 +103,14 @@ $(function(){
 				scrollTop: $($(this).attr('href')).offset().top-offsetTopPlus
 			}, 200);
 			
-			$(this).parent().find('.new--tabs_btn').removeClass('active');
+			$(this).parent().find('.new--tabs_btn--').removeClass('active');
 			$(this).addClass('active');
 		}
 	});
 	
 	function checkOpenTab(parent_tab,tab){
 		if(tab != ''){
-			$('.new--tabs_btn').each(function(){
+			$('.new--tabs_btn--').each(function(){
 				if(typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false && $(this).attr('href') != ''){
 					var links = $(this).attr('href').replace('#', '');
 					if(links != tab){
@@ -135,7 +135,7 @@ $(function(){
 			var firstTab = $("#"+parent_tab).find('.new--tab').first();
 			var links = firstTab.attr('id');
 			firstTab.addClass('open--tab');
-			$('.new--tabs_btn').each(function(){
+			$('.new--tabs_btn--').each(function(){
 				if(typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false && $(this).attr('href') != ''){
 					var link_btn = $(this).attr('href').replace('#', '');
 					console.log(links);

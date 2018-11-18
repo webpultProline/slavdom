@@ -298,13 +298,13 @@
 				<h1 class="title-page new_hidden_tablet">Личный кабинет</h1>
 				<div class="sidebar-and-blocks flex flex--j-between flex--a-start user--page">
                     <div class="column-one-base sidebar">
-                        <a href="#user-main" class="new--tabs_btn new_hidden_tablet">
+                        <a href="#user-main" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
 							Общая информация
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
 							</svg>
 						</a>
-                        <a href="#user-orders" class="new--tabs_btn new_hidden_tablet">
+                        <a href="#user-orders" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
 							История заказов
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
@@ -426,6 +426,21 @@
 											<span class="text-c-red">Через сайт можно осуществить только полную оплату заказа</span> Для частичной оплаты заказа воспользуйтесь наличным расчетом
 										</p>
 									</div>
+									
+						<div class="catalog-controls flex flex--j-between" data-select2-id="11">
+                            <div class="catalog-controls__left" data-select2-id="10">
+                                <div class="catalog-controls__sort flex flex--a-center" data-select2-id="9">
+                                    <div class="catalog-controls__text">Сортировать</div>
+                                    <div class="catalog-controls__select" data-select2-id="8">
+                                        <select class="from__select js-base-select select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                            <option value="0" data-select2-id="3">По популярности</option>
+                                            <option value="1" data-image="che-t" data-select2-id="16">По цене</option>
+                                            <option value="3" data-image="che-b" data-select2-id="17">По цене</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 								</div>
 								
 								<div class="new--user_orders-body">
