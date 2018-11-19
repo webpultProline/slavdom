@@ -288,9 +288,13 @@
                     </div>
                     <div class="breadcrumbs new_hidden_block new_show_tablet-block" itemscope itemtype="http://schema.org/BreadcrumbList">
                         <a href="./" class="breadcrumbs__link">Главная</a>
-                        <a href="./" class="breadcrumbs__link">Личный кабинет</a>
-                        <span class="breadcrumbs__current-page"></span>
+                        <a href="/user-main.html" class="breadcrumbs__link">Личный кабинет</a>
+                        <span class="breadcrumbs__current-page">История заказов</span>
                     </div>
+					<button class="print">
+                        <span class="print__text">Распечатать</span>
+                        <img class="print__icon" alt="Распечатать" src="img/temp/icon-print.png">
+                    </button>
                 </div>
             </div>
 
@@ -298,13 +302,13 @@
 				<h1 class="title-page new_hidden_tablet">Личный кабинет</h1>
 				<div class="sidebar-and-blocks flex flex--j-between flex--a-start user--page">
                     <div class="column-one-base sidebar">
-                        <a href="#user-main" class="new--tabs_btn new_hidden_tablet">
+                        <a href="/user-main.html#user-main" class="new--tabs_btn new_hidden_tablet">
 							Общая информация
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
 							</svg>
 						</a>
-                        <a href="#user-orders" class="new--tabs_btn new_hidden_tablet active">
+                        <a href="/user-main.html#user-orders" class="new--tabs_btn new_hidden_tablet active">
 							История заказов
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
@@ -316,7 +320,7 @@
 							<img src="img/new/user/req-call.svg" alt="" width="36">
 							<h2>Возникли вопросы?</h2>
 							<p>Позвоните нам по бесплатному номеру <a href="tel:8 (800) 333 51 51">8 (800) 333 51 51</a> <br>или оставьте заявку на обратный звонок</p>
-							<button class="button--border button--normal">Заказать обратный звонок</button>
+							<button class="button--border button--normal js-open-modal" data-container="modal-call-me">Заказать обратный звонок</button>
 						</div>
                     </div>
 
@@ -326,8 +330,15 @@
 						</div>
 						
 						<div class="new--user_orders-top">
-							<div class="new--user_orderdetail-top">
+							<div class="new--user_orderdetail-top new_hidden_tablet">
 								<h2 class="new--user-title">Заказ №12873</h2>
+								
+								<a href="/user-main.html#user-orders" class="new--user_orderdetail-back">
+									<svg class="list-catalog__chevrone">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-l"></use>
+									</svg>
+									<span>Вернуться</span>
+								</a>
 							</div>
 							<div class="contacts__notices flex flex--a-center">
 								<span class="important"></span>
@@ -339,7 +350,99 @@
 						
 						<div class="new--order_detail">
 							<div class="new--order_detail--left">
-								
+								<table class="new--order_detail--table">
+									<tr>
+										<th colspan="2">
+											<span>
+												<span>Информация о заказе</span>
+												<span>Принят</span>
+											</span>
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<span>Номер заказа</span>
+										</td>
+										<td>
+											<span>№12873</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Дата</span>
+										</td>
+										<td>
+											<span>от 18.12.2017</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Сумма к оплате</span>
+										</td>
+										<td>
+											<span>350 000<sup>50</sup> ₽</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Оплата</span>
+										</td>
+										<td>
+											<span><i>Не оплачен</i><span>Оплата наличными</span></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Тип платильщика</span>
+										</td>
+										<td>
+											<span>Физическое лицо</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Телефон</span>
+										</td>
+										<td>
+											<span>8 (926) 123 45 67</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Адрес доставки</span>
+										</td>
+										<td>
+											<span>Ланское шоссе</span>
+										</td>
+									</tr>
+								</table>
+								<table class="new--order_detail--table">
+									<tr>
+										<th colspan="2">
+											<span>
+												<span>Дополнительные опции</span>
+												<span></span>
+											</span>
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<span>Заказать резку кирпича<sup class="star">*</sup></span>
+										</td>
+										<td>
+											<span></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span>Требуются строительно-монтажные работы<sup class="star">*</sup></span>
+										</td>
+										<td>
+											<span></span>
+										</td>
+									</tr>
+								</table>
+								<p class="new--order_detail--bottom_table"><sup>*</sup>Стоимость согласоввается с менеджером</p>
 							</div>
 							<div class="new--order_detail--right">
 								<div class="new--order_detail--right--shadow">
@@ -357,7 +460,170 @@
 								
 								<a href="#" class="new--paid_link">Оплатить заказ</a>
 							</div>
+							
+							<p class="new--order_detail--products-top">Состав заказа</p>
+							
+							<div class="cart-cards__item new--order_detail--product-top flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__info-box">
+                                    <p>Наименование товар</p>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">Цена ₽</div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>Количество</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">Стоимость ₽</div>
+                                </div>
+                            </div>
+							<div class="cart-cards__item flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__image-box">
+                                    <a href="#">
+                                        <img src="/img/temp/cart-1.jpg" alt="" class="cart-cards__image">
+                                    </a>
+                                </div>
+                                <div class="cart-cards__info-box">
+                                    <div class="flex flex--a-center flex--j-start">
+                                        <div class="cart-cards__code">Код: 001226</div>
+                                    </div>
+                                    <a href="#" class="cart-cards__title">Кирпич облицовочный ручной формовки Terca Agaat<br> (65mm Medium Surrey Blend), 215*102*65 мм</a>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">350 000<sup>50</sup>
+                                        <span class="cart-cards__units">/ шт</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>10</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">350 000<sup>50</sup></div>
+                                </div>
+                            </div>
+							<div class="cart-cards__item flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__image-box">
+                                    <a href="#">
+                                        <img src="/img/temp/cart-2.jpg" alt="" class="cart-cards__image">
+                                    </a>
+                                </div>
+                                <div class="cart-cards__info-box">
+                                    <div class="flex flex--a-center flex--j-start">
+                                        <div class="cart-cards__code">Код: 001226</div>
+                                    </div>
+                                    <a href="#" class="cart-cards__title">Кирпич облицовочный ручной формовки Terca Agaat<br> (65mm Medium Surrey Blend), 215*102*65 мм</a>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">350 000<sup>50</sup>
+                                        <span class="cart-cards__units">/ шт</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>10</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">350 000<sup>50</sup></div>
+                                </div>
+                            </div>
+							<div class="cart-cards__item flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__image-box">
+                                    <a href="#">
+                                        <img src="/img/temp/cart-1.jpg" alt="" class="cart-cards__image">
+                                    </a>
+                                </div>
+                                <div class="cart-cards__info-box">
+                                    <div class="flex flex--a-center flex--j-start">
+                                        <div class="cart-cards__code">Код: 001226</div>
+                                    </div>
+                                    <a href="#" class="cart-cards__title">Кирпич облицовочный ручной формовки Terca Agaat<br> (65mm Medium Surrey Blend), 215*102*65 мм</a>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">350 000<sup>50</sup>
+                                        <span class="cart-cards__units">/ шт</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>10</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">350 000<sup>50</sup></div>
+                                </div>
+                            </div>
+							<div class="cart-cards__item flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__image-box">
+                                    <a href="#">
+                                        <img src="/img/temp/cart-2.jpg" alt="" class="cart-cards__image">
+                                    </a>
+                                </div>
+                                <div class="cart-cards__info-box">
+                                    <div class="flex flex--a-center flex--j-start">
+                                        <div class="cart-cards__code">Код: 001226</div>
+                                    </div>
+                                    <a href="#" class="cart-cards__title">Кирпич облицовочный ручной формовки Terca Agaat<br> (65mm Medium Surrey Blend), 215*102*65 мм</a>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">350 000<sup>50</sup>
+                                        <span class="cart-cards__units">/ шт</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>10</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">350 000<sup>50</sup></div>
+                                </div>
+                            </div>
+							<div class="cart-cards__item flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__image-box">
+                                    <a href="#">
+                                        <img src="/img/temp/cart-1.jpg" alt="" class="cart-cards__image">
+                                    </a>
+                                </div>
+                                <div class="cart-cards__info-box">
+                                    <div class="flex flex--a-center flex--j-start">
+                                        <div class="cart-cards__code">Код: 001226</div>
+                                    </div>
+                                    <a href="#" class="cart-cards__title">Кирпич облицовочный ручной формовки Terca Agaat<br> (65mm Medium Surrey Blend), 215*102*65 мм</a>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">350 000<sup>50</sup>
+                                        <span class="cart-cards__units">/ шт</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>10</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">350 000<sup>50</sup></div>
+                                </div>
+                            </div>
+							<div class="cart-cards__item flex flex--j-between flex--a-stretch">
+                                <div class="cart-cards__image-box">
+                                    <a href="#">
+                                        <img src="/img/temp/cart-2.jpg" alt="" class="cart-cards__image">
+                                    </a>
+                                </div>
+                                <div class="cart-cards__info-box">
+                                    <div class="flex flex--a-center flex--j-start">
+                                        <div class="cart-cards__code">Код: 001226</div>
+                                    </div>
+                                    <a href="#" class="cart-cards__title">Кирпич облицовочный ручной формовки Terca Agaat<br> (65mm Medium Surrey Blend), 215*102*65 мм</a>
+                                </div>
+                                <div class="cart-cards__price-box">
+                                    <div class="cart-cards__price">350 000<sup>50</sup>
+                                        <span class="cart-cards__units">/ шт</span>
+                                    </div>
+                                </div>
+                                <div class="cart-cards__price-count">
+                                    <p>10</p>
+                                </div>
+                                <div class="cart-cards__sum-box">
+                                    <div class="cart-cards__sum">350 000<sup>50</sup></div>
+                                </div>
+                            </div>
 						</div>
+						
+						<a href="#" class="new--paid_link new--order_detail--paid">Оплатить заказ</a>
 						
                     </div>
                 </div>

@@ -291,7 +291,7 @@
 
             <div class="inner directory offset-bottom">
                 <div class="page-nav__title">Сервис</div>
-                <ul class="page-nav page-nav__with-sep">
+                <ul class="page-nav page-nav__with-sep new--page-nav">
                     <li class="page-nav__item"><a href="/exchange.html" class="page-nav__link _current"><span>Обмен и возврат</span></a></li>
                     <li class="page-nav__item"><a href="/delivery.html" class="page-nav__link"><span>Доставка</span></a></li>
                     <li class="page-nav__item"><a href="#" class="page-nav__link"><span>Оплата</span></a></li>
@@ -357,7 +357,7 @@
 				<div class="ask-form typography new_typography offset-top offset-bottom">
 					<div class="title-section title-section--small">Если у Вас возникли какие-либо вопросы, касающиеся нашей работы</div>
 					<p class="text-c-black">Оставьте заявку на сайте, чтобы сделать на сервис лучше</p>
-					<a href="#" class="button button--fill button--normal button--acc">Написать нам</a>
+					<button class="button button--fill button--normal button--acc js-open-modal" data-container="modal-ask-question">Написать нам</button>
 				</div>
             </div>
 
@@ -912,6 +912,54 @@
 
         </div>
     </div>
+	<div class="modal micromodal-slide" id="modal-ask-question" aria-hidden="false">
+		<div class="modal-overlay"></div>
+		<div class="modal__container" tabindex="-1" data-micromodal-close="">
+			<div class="modal__content modal__content--form-normal" id="modal-ask-question_">
+				<p class="modal__title">Написать нам</p>
+				<button class="modal__close animation-base" data-micromodal-close=""></button>
+				<div class="form inner">
+					<form name="SIMPLE_FORM_6" action="/contacts/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid_3" value="3b9e4d21c8fe877326c1757a4b281023"><input type="hidden" name="WEB_FORM_ID" value="6">
+					<div class="order-form__text-group flex flex--wrap">
+						<label class="flex flex--a-center flex--j-between">
+							<span class="order-form__text-label">ФИО<sup class="text-c-red star">*</sup></span>
+							<input type="text" class="order-form__input" required="" name="form_text_15" value="">
+						</label>
+						<label class="flex flex--a-center flex--j-between">
+							<span class="order-form__text-label">E-mail<sup class="text-c-red star">*</sup></span>
+							<input type="text" class="order-form__input" required="" name="form_text_17" value="">
+						</label>
+						<label class="flex flex--a-center flex--j-between">
+							<span class="order-form__text-label">Ваш город<sup class="text-c-red star">*</sup></span>
+							<input type="text" class="order-form__input" required="" name="form_text_16" value="">
+						</label>
+						<label class="flex flex--a-center flex--j-between">
+							<span class="order-form__text-label">Текст вопроса<sup class="text-c-red star">*</sup></span>
+							<textarea type="textarea" class="order-form__input" required="" name="form_textarea_18" value=""></textarea>
+						</label>
+						<input type="hidden" class="form__input" name="form_hidden_19" value="/contacts/">            
+						<input type="hidden" class="form__input" name="form_hidden_59" value="">            
+						<input type="hidden" class="form__input" name="form_hidden_68" value="">            
+					</div>
+					<div class="order-form__text-group flex flex--wrap">
+						<label class="cs-filter__flag-wrap form__flag-wrap">
+							<input type="checkbox" class="form__input box-none _no-empty" required="">
+							<span class="form__flag">
+								<span class="cs-filter__flag">Согласен (на) на обработку персональных данных<sup class="text-c-red star">*</sup></span>
+							</span>
+						</label>
+					</div>
+					<input type="button" class="button button--big button--fill button--normal button--acc validate_btn" value="Отправить">
+					<br>
+					<br>
+					<p>
+						<span class="form-required starrequired">*</span> - обязательные поля
+					</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- city select -->
     <div class="modal micromodal-slide" id="modal-city-select" aria-hidden="true">

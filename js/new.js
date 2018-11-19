@@ -1,4 +1,11 @@
 $(function(){
+	/*Колеровка*/
+	$('.new_palette_top--item').click(function(event){
+		event.preventDefault();
+		$('.new_palette_top--item').removeClass('active');
+		$(this).addClass('active');
+	});
+	/**/
 	if($('._new-delivery_carousel').length > 0){
 		$('._new-delivery_carouselBot').slick({
 			arrows: false,
