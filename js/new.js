@@ -54,6 +54,15 @@ $(function(){
 	if($('._new_pickups-nav-indicator').length > 0){
 		setTabIndicatorDelivery();
 	}
+	$('.new--tab-navigation').find('li').click(function(){
+		$('._new_pickups-nav').find('li').removeClass('active');
+		$(this).addClass('active');
+		
+		$(this).parents('._new_pickups').find('._new_pickup-body').removeClass('active');
+		$(this).parents('._new_pickups').find('#'+$(this).attr('data-action_tab')).addClass('active');
+		
+		setTabIndicatorDelivery();
+	});
 	// показать больше
 	$('.newScrollHidden-btn').bind('click', function(e) { 
 		e.preventDefault();
@@ -155,4 +164,12 @@ $(function(){
 			});
 		}
 	}
+	/*
+	//
+	//Страница поиска
+	//
+	*/
+	$('.new--btn-group--shows').click(function(){
+		$(this).parent().toggleClass('open');
+	});
 });
