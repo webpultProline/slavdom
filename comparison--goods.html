@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
 
 <head>
-    <title>Славдом - Личный кабинет</title>
+    <title>Славдом - Сравнение товаров</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
@@ -281,348 +281,2704 @@
 
         <div class="wrapper">
             <div class="top-page-links">
-                <div class="top-page-links__inner inner flex flex--a-start flex--j-between">
-                    <div class="breadcrumbs new_hidden_tablet" itemscope itemtype="http://schema.org/BreadcrumbList">
-                        <a href="./" class="breadcrumbs__link">Главная</a>
-                        <span class="breadcrumbs__current-page">Личный кабинет</span>
+				<div class="top-page-links__inner inner flex flex--a-start flex--j-between">
+                    <div class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__link">Главная</a>
+                        <span class="breadcrumbs__current-page">Сравнение товаров</span>
                     </div>
-                    <div class="breadcrumbs new_hidden_block new_show_tablet-block" itemscope itemtype="http://schema.org/BreadcrumbList">
-                        <a href="./" class="breadcrumbs__link">Главная</a>
-                        <a href="/user-main.html" class="breadcrumbs__link">Личный кабинет</a>
-                        <span class="breadcrumbs__current-page"></span>
-                    </div>
+                    <button class="print">
+                        <span class="print__text">Распечатать</span>
+                        <img class="print__icon" alt="Распечатать" src="img/temp/icon-print.png">
+                    </button>
                 </div>
             </div>
 
-            <div class="inner directory offset-bottom">
-				<h1 class="title-page new_hidden_tablet">Личный кабинет</h1>
-				<div class="sidebar-and-blocks flex flex--j-between flex--a-start user--page">
-                    <div class="column-one-base sidebar">
-                        <a href="#user-main" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
-							Общая информация
-							<svg class="list-catalog__chevrone">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-							</svg>
-						</a>
-                        <a href="#user-orders" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
-							История заказов
-							<svg class="list-catalog__chevrone">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-							</svg>
-						</a>
-                        <button class="new--tabs_btn new_hidden_tablet">Выход</button>
-						
-						<div class="new_side--req_call_back">
-							<img src="img/new/user/req-call.svg" alt="" width="36">
-							<h2>Возникли вопросы?</h2>
-							<p>Позвоните нам по бесплатному номеру <a href="tel:8 (800) 333 51 51">8 (800) 333 51 51</a> <br>или оставьте заявку на обратный звонок</p>
-							<button class="button--border button--normal js-open-modal" data-container="modal-call-me">Заказать обратный звонок</button>
-						</div>
-                    </div>
-
-                    <div class="column-one-invert">
-						<div class="new--tabs" id="users--tabs">
-							<div class="new--tab" id="user-main">
-								<div class="new_hidden_block new_show_tablet-flex new--user-main__mobile d-flex flex-row flex-wrap justify-content-between align-items-center">
-									<h2 class="new--user-title">Общая информация</h2>
-									
-									<button class="user-box__sign-in header-top__text-color link link--h-acc">
-										<svg class="user-box__icon">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use>
-										</svg>
-										<span class="user-box__title">Выйти</span>
-									</button>
-									
-									<a href="#user-orders" class="new--tabs_btn-mobile">
-										История заказов
-										<svg class="list-catalog__chevrone">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-										</svg>
-									</a>
-								</div>
-								
-							
-								<form class="new--form_user">
-									<h2 class="new--user-title new_hidden_tablet">Общая информация</h2>
-									<h3 class="new--user-subtitle">Персональные данные</h3>
-									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
-										<label class="new_label--inputs flex flex--a-center flex--j-between">
-											<span class="new_label--title">Имя</span>
-											<input type="text" placeholder="Введите Ваши ФИО" name="" value="">
-										</label>
-									</div>
-									<div class="new--user-row new--w50 d-flex flex-row flex-wrap justify-content-between align-items-center">
-										<label class="new_label--inputs new--w50 flex flex--a-center flex--j-between">
-											<span class="new_label--title">Телефон</span>
-											<input type="tel" placeholder="+7 (___) ___-__-__" name="" value="" class="form__input--phone-full">
-										</label>
-										<label class="new_label--inputs new--w50 flex flex--a-center flex--j-between">
-											<span class="new_label--title">E-mail</span>
-											<input type="email" placeholder="info@gmail.ru" name="" value="">
-										</label>
-									</div>
-									<h3 class="new--user-subtitle">Место проживания</h3>
-									<div class="new--user-row new--w50 d-flex flex-row flex-wrap justify-content-between align-items-center">
-										<label class="new_label--inputs new--w50 flex flex--a-center flex--j-between">
-											<span class="new_label--title">Город</span>
-											<input type="text" placeholder="Выберите город" name="" value="">
-										</label>
-									</div>
-									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
-										<label class="new_label--inputs flex flex--a-center flex--j-between">
-											<span class="new_label--title">Адрес</span>
-											<input type="text" placeholder="Введите адрес" name="" value="">
-										</label>
-									</div>
-									<h2 class="new--user-title">Сменить пароль</h2>
-									
-									
-									
-									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
-										<label class="new_label--inputs new_label--inputs-password flex flex--a-center flex--j-between">
-											<span class="new_label--title">Новый пароль</span>
-											<span class="new--indicator_input">
-												<button class="new--indicator_input--del"></button>
-												<input type="password" name="" value="" placeholder="Новый пароль">
-												<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-											</span>
-										</label>
-									</div>
-									<div class="new--user-row d-flex flex-row flex-wrap justify-content-between align-items-center">
-										<label class="new_label--inputs new_label--inputs-password flex flex--a-center flex--j-between">
-											<span class="new_label--title">Повторите новый пароль</span>
-											<span class="new--indicator_input">
-												<input type="password" name="" value="" placeholder="Повторите новый пароль">
-												<span class="new--indicator_"><span></span><span></span><span></span><span></span><span></span><span></span></span>
-											</span>
-										</label>
-									</div>
-									<button class="button--border button--acc button--normal">Сменить пароль</button>
-								</form>
-							</div>
-							<div class="new--tab" id="user-orders">
-								<div class="new_hidden_block new_show_tablet-flex new--user-main__mobile d-flex flex-row flex-wrap justify-content-between align-items-center">
-									<h2 class="new--user-title">Личный кабинет</h2>
-									
-									<button class="user-box__sign-in header-top__text-color link link--h-acc">
-										<svg class="user-box__icon">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use>
-										</svg>
-										<span class="user-box__title">Выйти</span>
-									</button>
-									
-									<a href="#user-main" class="new--tabs_btn-mobile">
-										Общая информация
-										<svg class="list-catalog__chevrone">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-										</svg>
-									</a>
-								</div>
-								
-								<div class="new--user_orders-top">
-									<h2 class="new--user-title">История заказов</h2>
-									<div class="contacts__notices flex flex--a-center">
-										<span class="important important--red"></span>
-										<p class="typography">
-											<span class="text-c-red">Через сайт можно осуществить только полную оплату заказа</span> Для частичной оплаты заказа воспользуйтесь наличным расчетом
-										</p>
-									</div>
-									
-						<div class="catalog-controls flex flex--j-between" data-select2-id="11">
-                            <div class="catalog-controls__left" data-select2-id="10">
-                                <div class="catalog-controls__sort flex flex--a-center" data-select2-id="9">
-                                    <div class="catalog-controls__text">Сортировать</div>
-                                    <div class="catalog-controls__select" data-select2-id="8">
-                                        <select class="from__select js-base-select select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                            <option value="0">По № заказа</option>
-                                            <option value="1">По статусу</option>
-                                            <option value="3">По дате</option>
-                                            <option value="4">По стоимости</option>
-                                            <option value="5">По оплате</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								</div>
-								
-								<div class="new--user_orders-body">
-									<div class="new--user_orders-table_top">
-										<p class="new--user_order-table-section"><a href="#" class="active">№</a></p>
-										<p class="new--user_order-table-section"><a href="#">Статус</a></p>
-										<p class="new--user_order-table-section"><a href="#">Дата</a></p>
-										<p class="new--user_order-table-section"><a href="#">Стоимость</a></p>
-										<p class="new--user_order-table-section"><a href="#">Оплата</a></p>
-									</div>
-									
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html"><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<a href="#" class="new--user_order-table-section new--paid_link">
-											Оплатить заказ
-										</a>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата картой</p>
-											<p class="new--paid_type-info">Оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<a href="#" class="new--user_order-table-section new--paid_link">
-											Оплатить заказ
-										</a>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<button class="new--paid_type-help"></button>
-											<p class="new--paid_type-title">Оплата картой</p>
-											<p class="new--paid_type-info">Частично</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата картой</p>
-											<p class="new--paid_type-info">Оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-								</div>
-								
-								<div class="pagination-wrap flex flex--a-center">
-									<div class="pagination">
-										<a href="#" class="pagination__el pagination__el--disabled pagination__el--arr">
-											<svg class="pagination__icon">
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-dche-l"></use>
-											</svg>
-										</a>
-										<a href="#" class="pagination__el pagination__el--disabled pagination__el--arr">
-											<svg class="pagination__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-l"></use></svg>
-										</a>
-										<div class="pagination__page-numbs">
-											<a href="#" class="pagination__el _current">1</a>
-											<a href="#" class="pagination__el">2</a>
-											<a href="#" class="pagination__el">3</a>
-											<a href="#" class="pagination__el">4</a>
-											<a href="#" class="pagination__el">5</a>
-										</div>
-										<a href="#" class="pagination__el pagination__el--arr">
-											<svg class="pagination__icon">
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-											</svg>
-										</a>
-										<a href="#" class="pagination__el pagination__el--arr">
-											<svg class="pagination__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-dche-r"></use></svg>
-										</a>
-									</div>
-									<div class="pagination-num">
-										<span class="pagination-num__on-page">15</span>
-										<span class="pagination-num__total-page">из 130</span>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-                    </div>
+            <div class="inner comparison">
+                <div class="title-page__wrapper">
+                    <h1 class="title-page">Сравнение товаров</h1> <sup>6</sup>
+					
+					<button class="comparison--del_product"><span>Очистить все</span></button>
                 </div>
+				
+				
+				
+				
+				
+				<div class="comparison--carousel">
+					<div class="comparison--carousel-left">
+						<p class="comparison--now">Показано <span class="comparison--visibility_product-now"></span> из <span class="comparison--visibility_product-all"></span></p>
+						
+						<div class="new--label-group">
+							<label class="new--label-radio">
+								<input type="radio" name="comparison" value="all" checked>
+								<i></i>
+								<span>Все характеристики</span>
+							</label>
+							<label class="new--label-radio">
+								<input type="radio" name="comparison" value="param_1">
+								<i></i>
+								<span>Только различающиеся</span>
+							</label>
+							<label class="new--label-radio">
+								<input type="radio" name="comparison" value="param_2">
+								<i></i>
+								<span>Одинаковые</span>
+							</label>
+						</div>
+					</div>
+					<div class="comparison--carousel-right">
+						<button class="comparison--del_product"><span>Очистить все</span></button>
+						<div class="product-cards comparison--product-cards swiper-container swiper-container--with-pagination">
+							<div class="swiper-wrapper">
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_1">
+									<button class="comparison--card--del_product"></button>
+								
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--discount js-tooltip" data-tooltip="Скидка действует до 10.11.2017" data-tooltip-color="discount">-30%</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-green js-tooltip-html" data-tooltip='<div class="hint"><a href="#" class="hint-close-btn"></a><p><b>Самовывоз</b> сегодня со склада в Москве</p><img src="img/temp/icon-delivery-gray.svg" class="icon-delivery-gray" alt=""><p><b>Срок доставки</b> по г.Москва и Московской области: 3.5 - 24 часа с момента подтверждения заказа</p></div>'>В наличии</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-1.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
 
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_2">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--free-delivery js-tooltip" data-tooltip="Акция действует до 10.11.2017" data-tooltip-color="free-delivery">Бесплатная доставка</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-gray">На заказ</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<img src="/img/icon/colors.png" class="product-cards__head-icon js-tooltip" data-tooltip="Данный товар можно колеровать" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-2.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_1">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--sale">Распродажа</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--today">Забрать сегодня</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--hit">Хит продаж</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--new">Новинка</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-green js-tooltip-html" data-tooltip='<div class="hint"><a href="#" class="hint-close-btn"></a><p><b>Самовывоз</b> сегодня со склада в Москве</p><img src="img/temp/icon-delivery-gray.svg" class="icon-delivery-gray" alt=""><p><b>Срок доставки</b> по г.Москва и Московской области: 3.5 - 24 часа с момента подтверждения заказа</p></div>'>В наличии</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-3.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм Кирпич шамоaй Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_2">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-gray">На заказ</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-2.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_1">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--discount js-tooltip" data-tooltip="Скидка действует до 10.11.2017" data-tooltip-color="discount">-30%</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-green js-tooltip-html" data-tooltip='<div class="hint"><a href="#" class="hint-close-btn"></a><p><b>Самовывоз</b> сегодня со склада в Москве</p><img src="img/temp/icon-delivery-gray.svg" class="icon-delivery-gray" alt=""><p><b>Срок доставки</b> по г.Москва и Московской области: 3.5 - 24 часа с момента подтверждения заказа</p></div>'>В наличии</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-1.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_2">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--free-delivery js-tooltip" data-tooltip="Акция действует до 10.11.2017" data-tooltip-color="free-delivery">Бесплатная доставка</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-gray">На заказ</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<img src="/img/icon/colors.png" class="product-cards__head-icon js-tooltip" data-tooltip="Данный товар можно колеровать" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-2.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_1">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--sale">Распродажа</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--today">Забрать сегодня</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--hit">Хит продаж</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--new">Новинка</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-green js-tooltip-html" data-tooltip='<div class="hint"><a href="#" class="hint-close-btn"></a><p><b>Самовывоз</b> сегодня со склада в Москве</p><img src="img/temp/icon-delivery-gray.svg" class="icon-delivery-gray" alt=""><p><b>Срок доставки</b> по г.Москва и Московской области: 3.5 - 24 часа с момента подтверждения заказа</p></div>'>В наличии</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-3.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм Кирпич шамоaй Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_2">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-gray">На заказ</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-2.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_1">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--discount js-tooltip" data-tooltip="Скидка действует до 10.11.2017" data-tooltip-color="discount">-30%</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-green js-tooltip-html" data-tooltip='<div class="hint"><a href="#" class="hint-close-btn"></a><p><b>Самовывоз</b> сегодня со склада в Москве</p><img src="img/temp/icon-delivery-gray.svg" class="icon-delivery-gray" alt=""><p><b>Срок доставки</b> по г.Москва и Московской области: 3.5 - 24 часа с момента подтверждения заказа</p></div>'>В наличии</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-1.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_2">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--free-delivery js-tooltip" data-tooltip="Акция действует до 10.11.2017" data-tooltip-color="free-delivery">Бесплатная доставка</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-gray">На заказ</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<img src="/img/icon/colors.png" class="product-cards__head-icon js-tooltip" data-tooltip="Данный товар можно колеровать" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-2.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_1">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-label product-label--product-cards">
+										<div>
+											<span class="product-label__el product-label__el--sale">Распродажа</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--today">Забрать сегодня</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--hit">Хит продаж</span>
+										</div>
+										<div>
+											<span class="product-label__el product-label__el--new">Новинка</span>
+										</div>
+									</div>
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-green js-tooltip-html" data-tooltip='<div class="hint"><a href="#" class="hint-close-btn"></a><p><b>Самовывоз</b> сегодня со склада в Москве</p><img src="img/temp/icon-delivery-gray.svg" class="icon-delivery-gray" alt=""><p><b>Срок доставки</b> по г.Москва и Московской области: 3.5 - 24 часа с момента подтверждения заказа</p></div>'>В наличии</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<img src="/img/icon/gifts.svg" class="product-cards__head-icon js-tooltip" data-tooltip="Покупая данный товар вы получаете в подарок приятный бонус" data-tooltip-color="base" alt="">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-3.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм Кирпич шамотный Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм Кирпич шамоaй Боровичский  комбинат огнеупоров ШБ-8,  250*65*124 мм</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="product-cards__box swiper-slide" data-product-id="34654" data-product_property="param_2">
+									<button class="comparison--card--del_product"></button>
+								
+									
+									<div class="product-cards__head-box">
+										<div class="product-cards__left">
+											<div class="actions-info actions-info--product-cards">
+												<button class="actions-info__box actions-info__box--like js-add-product js-tooltip" data-tooltip="Добавить в избранное" data-tooltip-color="base" data-tracking="favorites">
+													<svg class="actions-info__icon">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-like"></use>
+													</svg>
+												</button>
+												<button class="actions-info__box actions-info__box--comparsion js-add-product js-tooltip" data-tooltip="Добавить в сравнение" data-tooltip-color="base" data-tracking="comparsion">
+													<svg class="actions-info__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+														<path class="i-comparsion-1" d="M4.17 8.987H.827a.861.861 0 0 0-.834.887v10.25a.861.861 0 0 0 .834.885H4.17a.861.861 0 0 0 .83-.886V9.874a.861.861 0 0 0-.83-.887zm-1.175 10H2v-7.979h.995v7.979z" />
+														<path class="i-comparsion-2" d="M10.175.012H6.833A.839.839 0 0 0 6 .857v19.307a.839.839 0 0 0 .834.843h3.342a.84.84 0 0 0 .835-.843V.857a.84.84 0 0 0-.836-.845zM9 19.006h-.993V2.013H9v16.993z" />
+														<path class="i-comparsion-3" d="M16.161 4.013h-3.342a.843.843 0 0 0-.835.851v15.294a.842.842 0 0 0 .835.849h3.342a.843.843 0 0 0 .839-.849V4.864a.843.843 0 0 0-.839-.851zm-1.152 14.981H14v-13h1.01v13z" />
+													</svg>
+												</button>
+												<button class="product-cards__status link link--dotted text-c-gray">На заказ</button>
+											</div>
+										</div>
+										<div class="product-cards__right flex flex--a-center">
+											<div class="product-cards__code">Код: 001226</div>
+										</div>
+									</div>
+									<a href="#" class="product-cards__image-box">
+										<img src="/img/temp/product-2.png" alt="" class="product-cards__image">
+									</a>
+									<a href="#" class="product-cards__title">Кирпич шамотный Боровичский  комбинат</a>
+									<div class="product-cards__price-box">
+										<div class="product-cards__price">125<sup>50</sup> ₽
+											<span class="product-cards__units">/ шт</span>
+										</div>
+										<div class="product-cards__price">1 290<sup>50</sup> ₽
+											<span class="product-cards__units">/ м<sup>2</sup></span>
+										</div>
+									</div>
+									<div class="product-cards__buy-box">
+										<button class="product-cards__fast-buy button button--border button--acc button--normal">
+											<span class="product-cards__buy-hide">Купить</span> в 1 клик</button>
+										<button class="product-cards__add-cart button button--fill button--acc button--normal">
+											<img src="/img/icon/product-cart.svg" class="product-cards__cart-icon" alt="">
+										</button>
+									</div>
+								</div>
+
+							</div>
+							<div class="product-cards__pagination swiper-pagination swiper-pagination--theme-2"></div>
+							<div class="product-cards__arrow swiper-button-prev">
+								<svg class="swiper-button-icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-l"></use>
+								</svg>
+							</div>
+							<div class="product-cards__arrow swiper-button-next">
+								<svg class="swiper-button-icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+                
+                <div class="new--comparison-bottom">
+					<div class="new--comparison-label_item toggle-item" area-hidden="true" aria-hidden="true">
+						<div class="new--comparison-label_item-title toggle-item__handle">
+							<span class="new--comparison-label_item-text">Нормы загрузки  </span>
+							<svg class="new--comparison-label_item-chevrone">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-b"></use>
+							</svg>
+						</div>
+						<div class="new--comparison-label_item-content toggle-item__box">
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Вес кг/м<sup>2</sup></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Материал</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Расход кладочного раствора, кг/шт</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="new--comparison-label_item toggle-item" area-hidden="true" aria-hidden="true">
+						<div class="new--comparison-label_item-title toggle-item__handle">
+							<span class="new--comparison-label_item-text">Цветовые характеристики </span>
+							<svg class="new--comparison-label_item-chevrone">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-b"></use>
+							</svg>
+						</div>
+						<div class="new--comparison-label_item-content toggle-item__box">
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Вес кг/м<sup>2</sup></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Материал</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Расход кладочного раствора, кг/шт</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="new--comparison-label_item toggle-item" area-hidden="true" aria-hidden="true">
+						<div class="new--comparison-label_item-title toggle-item__handle">
+							<span class="new--comparison-label_item-text">Размерности </span>
+							<svg class="new--comparison-label_item-chevrone">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-b"></use>
+							</svg>
+						</div>
+						<div class="new--comparison-label_item-content toggle-item__box">
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Вес кг/м<sup>2</sup></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Материал</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Расход кладочного раствора, кг/шт</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="new--comparison-label_item toggle-item" area-hidden="true" aria-hidden="true">
+						<div class="new--comparison-label_item-title toggle-item__handle">
+							<span class="new--comparison-label_item-text">Технические характеристики </span>
+							<svg class="new--comparison-label_item-chevrone">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-b"></use>
+							</svg>
+						</div>
+						<div class="new--comparison-label_item-content toggle-item__box">
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Цена за шт.</b> ₽</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>815</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>1 198</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>559<sup>20</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>815</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>1 198</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>559<sup>20</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>815</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>1 198</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>559<sup>20</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>815</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>1 198</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>559<sup>20</sup></p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Бренд</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Производитель</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Bau-fix</p>
+										<img src="img/new/comparison/brand-1.png" alt="">
+										<img src="img/new/comparison/shield.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>BAUT</p>
+										<img src="img/new/comparison/brand-2.png" alt="">
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Borge</p>
+										<img src="img/new/comparison/brand-3.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Область применения</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>для ванной/ для камня/ <br>для кирпича/ для плитки/ <br>для пола/ для стен</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>для ванной/ для камня/ <br>для кирпича/ для плитки/ <br>для пола/ для стен</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>для ванной/ для камня/ <br>для кирпича/ для плитки/ <br>для пола/ для стен</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>для ванной/ для камня/ <br>для кирпича/ для плитки/ <br>для пола/ для стен</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Тип продукта</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Артикул</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table new--red-text">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Базовая единица	</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Вес кг/м<sup>2</sup></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Материал</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Расход кладочного раствора, кг/шт</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table new--red-text">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Тип продукта</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Затирка для швов</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Фальцевая кровля</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Гибкая черепица</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Артикул</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72301</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72302</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>72303</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Базовая единица	</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>м<sup>2</sup></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>упак</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Вес кг/м<sup>2</sup></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Материал</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Расход кладочного раствора, кг/шт</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+							</div>
+							<!--
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p></p>
+									</div>
+								</div>
+							</div>
+							-->
+						</div>
+					</div>
+					<div class="new--comparison-label_item toggle-item" area-hidden="true" aria-hidden="true">
+						<div class="new--comparison-label_item-title toggle-item__handle">
+							<span class="new--comparison-label_item-text">Производство </span>
+							<svg class="new--comparison-label_item-chevrone">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-b"></use>
+							</svg>
+						</div>
+						<div class="new--comparison-label_item-content toggle-item__box">
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Вес кг/м<sup>2</sup></b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>144</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Материал</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Сталь</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>Стеклохолст</p>
+									</div>
+								</div>
+							</div>
+							<div class="new--comparison-table">
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p><b>Расход кладочного раствора, кг/шт</b></p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>—</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+								<div class="new--comparison-table_item">
+									<div class="new--comparison-table_item-row">
+										<p>0,2-0,9</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+				
             </div>
 
         </div>
@@ -1125,7 +3481,7 @@
 							<option value="1">Санкт-Петербург</option>
 						</select>
 					</div>
-
+										
 					<label class="cs-filter__flag-wrap form__flag-wrap _success">
 						<input type="checkbox" class="form__input box-none _no-empty" required="">
 						<span class="form__flag">
