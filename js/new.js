@@ -1,4 +1,9 @@
 $(function(){
+	if($('.new--input_phone').length > 0){
+		$('.new--input_phone').mask('+7(999)999-99-99');
+	}
+	
+	
 	/*Колеровка*/
 	$('.new_palette_top--item').click(function(event){
 		event.preventDefault();
@@ -66,7 +71,6 @@ $(function(){
 	// показать больше
 	$('.newScrollHidden-btn').bind('click', function(e) { 
 		e.preventDefault();
-		console.log('as');
 		$('#'+$(this).attr('data-target_block')).toggleClass('newScrollHidden-open');
 		$('#'+$(this).attr('data-target_block')).stop().slideToggle(350);
 		if($('#'+$(this).attr('data-target_block')).hasClass('newScrollHidden-open') == true){
@@ -78,7 +82,7 @@ $(function(){
 		}
 	});
 	///
-	///
+	///Пароль
 	///
 	function setStatusForInput(self){
 		var checkValPassword = self.parents('.new--form_user').find('.new_label--inputs-password').not(self.parents('.new_label--inputs-password'));
@@ -97,6 +101,11 @@ $(function(){
 	}
 	$('.new_label--inputs-password input[type="password"]').change(function(){
 		setStatusForInput($(this))
+	});
+	$('.new--indicator_input--del').click(function(event){
+		event.preventDefault();
+		$(this).parent().find('input[type="password"]').val('');
+		setStatusForInput($(this).parent().find('input[type="password"]'));
 	});
 	///----------------------
 	///Табы в личном кабинете

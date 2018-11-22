@@ -415,6 +415,14 @@
 											<span>Ланское шоссе</span>
 										</td>
 									</tr>
+									<tr>
+										<td>
+											<span>Стоимость доставки</span>
+										</td>
+										<td>
+											<span>350 000<sup>50</sup> ₽</span>
+										</td>
+									</tr>
 								</table>
 								<table class="new--order_detail--table">
 									<tr>
@@ -1043,7 +1051,7 @@
     <div class="modal micromodal-slide" id="modal-sign-in" aria-hidden="true">
         <div class="modal-overlay"></div>
         <div class="modal__container" tabindex="-1" data-micromodal-close>
-            <div class="modal__content modal__content--form-normal" id="modal-sign-in_">
+            <div class="modal__content modal__content--form-normal modal__content--from-user" id="modal-sign-in_">
                 <p class="modal__title">Вход в личный кабинет</p>
                 <button class="modal__close animation-base" data-micromodal-close></button>
                 <form action="#" class="form">
@@ -1110,23 +1118,33 @@
     <div class="modal micromodal-slide" id="modal-call-me" aria-hidden="true">
         <div class="modal-overlay"></div>
         <div class="modal__container" tabindex="-1" data-micromodal-close>
-            <div class="modal__content modal__content--form-normal" id="modal-call-me_">
+            <div class="modal__content modal__content--form-normal modal__content--from-call-back" id="modal-call-me_">
                 <p class="modal__title">Заказать обратный звонок</p>
                 <button class="modal__close animation-base" data-micromodal-close></button>
                 <form action="#" class="form">
                     <label class="form__field">
-                        <span class="form__inner-label form__inner-label--big">Имя</span>
+                        <span class="form__inner-label form__inner-label--big">Как к вам обращаться</span>
                         <input type="text" class="form__input" required>
                     </label>
                     <label class="form__field">
                         <span class="form__inner-label form__inner-label--big relative">Телефон
                             <span class="form__phone-start">+7</span>
                         </span>
-                        <input type="tel" class="form__input form__input--phone" required placeholder="(___) ___-__-__">
+                        <input type="tel" class="form__input form__input--phone" required placeholder="(___) ___ - __ - __">
                     </label>
-                    <label class="form__flag-wrap">
-                        Я соглашаюсь с <a href="#" class="form__link">условиями обработки персональных данных</a>
-                    </label>
+					<div class="catalog-controls__select">
+						<select class="from__select js-base-select">
+							<option value="0">Москва</option>
+							<option value="1">Санкт-Петербург</option>
+						</select>
+					</div>
+										
+					<label class="cs-filter__flag-wrap form__flag-wrap _success">
+						<input type="checkbox" class="form__input box-none _no-empty" required="">
+						<span class="form__flag">
+							<span class="cs-filter__flag">Я соглашаюсь с условиями обработки персональных данных</span>
+						</span>
+					</label>
 
                     <div class="form__button-box">
                         <button class="form__send-button form__button button button--normal button--border button--disabled w-50" disabled>Отправить</button>
