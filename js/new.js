@@ -39,24 +39,26 @@ $(function(){
 		});
 	}
 	// табы в доставке
-	window.onload = function() {
-		$('._new_pickup-body ._new_pickup-map').each(function(){
-			var map_id = $(this).attr('id');
-			var cord1 = $(this).attr('data-cord1');
-			var cord2 = $(this).attr('data-cord2');
-			
-			/*var myMap = new ymaps.Map(map_id, {
-				center: [cord1,cord2],
-				zoom: 16
-			});
-			myPlacemark = new ymaps.Placemark([cord1,cord2]);
+	if($('._new_pickup-body ._new_pickup-map').length > 0){
+		ymaps.ready(function () {
+			$('._new_pickup-body ._new_pickup-map').each(function(){
+				var map_id = $(this).attr('id');
+				var cord1 = $(this).attr('data-cord1');
+				var cord2 = $(this).attr('data-cord2');
+				
+				var myMap = new ymaps.Map(map_id, {
+					center: [cord1,cord2],
+					zoom: 16
+				});
+				myPlacemark = new ymaps.Placemark([cord1,cord2]);
 
-			myMap.geoObjects.add(myPlacemark);*/
+				myMap.geoObjects.add(myPlacemark);
+			});
+			
+			$('._new_pickups').find('._new_pickup-body').addClass('init')
+			$('._new_pickups').find('#'+$('._new_pickups-navs').find('li.active').attr('data-action_tab')).addClass('active');
 		});
-		
-		$('._new_pickups').find('._new_pickup-body').addClass('init')
-		$('._new_pickups').find('#'+$('._new_pickups-navs').find('li.active').attr('data-action_tab')).addClass('active');
-	};
+	}
 	
 	$('._new_pickups-navs').find('li').click(function(){
 		$('._new_pickups-navs').find('li').removeClass('active');
@@ -262,23 +264,24 @@ $(function(){
 					_changeDescriptionComparison(slide_curent.index());
 				}
 			}
-			/*on: {
-				slideChangeTransitionStart: function () {
-					var length = $('.product-cards__box').length;
-					if ($('.product-cards__box.swiper-slide-active').index() == (length - 4)) {
-					$.ajax({
-					url: ajaxUrlProducSlider,
-					cache: false,
-					success: function (data) {
-					productCardsSlider.appendSlide(data);
-					},
-					error: function (data) {
-					console.error(data);
-					}
-					});
-					}
-				}
-			},*/
+		});
+	}
+	//
+	//Страница детальной новости
+	//
+	if($('.news--detail--carousel').length > 0){
+		var productCardsSlider = new Swiper('.news--detail--carousel', {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			spaceBetween: 20,
+			navigation: {
+				prevEl: '.product-cards__arrow.swiper-button-prev',
+				nextEl: '.product-cards__arrow.swiper-button-next',
+			},
+			pagination: {
+				el: '.product-cards__pagination.swiper-pagination',
+				clickable: true,
+			},
 		});
 	}
 	/*
