@@ -758,7 +758,7 @@
 }
 .new--user_order-table-section:nth-child(4) {
 	width: 15.57788944723618%;
-	font-weight: 700;
+	font-weight: 500;
 	color: #000000;
 }
 .new--user_order-table-section:nth-child(5) {
@@ -889,7 +889,7 @@
 	text-decoration: none!important;
 	border: 1px solid #d70022;
 	transition: background-color .35s , border-color .35s;
-	border-radius: 2px;
+	border-radius: 0;
 	
 	
 	display: -ms-flexbox;
@@ -1012,7 +1012,7 @@
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.19);
 	width: calc(100% - 310px);
 	margin-right: 17px;
-	padding: 32px 33px 0;
+	padding: 32px 34px 0;
 }
 .new--order_detail--right {
 	width: 293px;
@@ -1833,18 +1833,23 @@
 		-ms-flex-preferred-size: 100%;
 		flex-basis: 100%;
 	}
-	
+	.new_label--inputs input {
+		line-height: 33px!important;
+		height: 33px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	.new_label--inputs input::-webkit-input-placeholder {
-		line-height: 1em;
+		line-height: 33px;
 	}
 	.new_label--inputs input::-moz-placeholder {
-		line-height: 1em;
+		line-height: 33px;
 	}
 	.new_label--inputs input:-ms-input-placeholder {
-		line-height: 1em;
+		line-height: 33px;
 	}
 	.new_label--inputs input:-moz-placeholder {
-		line-height: 1em;
+		line-height: 33px;
 	}
 	
 	.new--user_orders-top .contacts__notices {
@@ -1852,6 +1857,10 @@
 	}
 	.new--user_orders-top .select2-container .select2-selection--single {
 		height: 40px;
+	}
+	.new--user_orders-top .select2-container .select2-selection--single .select2-selection__rendered {
+		height: 38px;
+		line-height: 38px
 	}
 	
 	.new--user_orders-top .catalog-controls__left {
@@ -3525,7 +3534,7 @@ div[class*="_new_tinting_ico"]:before {
 }
 /*
 ---------------------------------------
-Страница доставки и оплаты
+Страница вакансий
 ---------------------------------------
 */
 .new--jobs-carouselTop ._new-delivery_carouselInfoTitle {
@@ -3638,8 +3647,21 @@ div[class*="_new_tinting_ico"]:before {
 	-ms-flex-align: stretch;
 	align-items: stretch;
 }
+
+.jobs--feedback .new--title_block {
+	margin: 30px 0 21px;
+	display: block;
+	width: 100%;
+	letter-spacing: -0.025em;
+}
+
 .jobs--feedbackL {
 	width: 50%;
+	height: 435px;
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .jobs--feedbackR {
 	width: 50%;
@@ -3655,8 +3677,9 @@ div[class*="_new_tinting_ico"]:before {
 	-ms-flex-line-pack: center;
 	align-content: center;
 	
-	padding-left: 73px;
+	padding-left: 62px;
 	padding-right: 15px;
+	padding-bottom: 23px
 }
 
 .jobs--feedbackR-top {
@@ -3671,10 +3694,11 @@ div[class*="_new_tinting_ico"]:before {
 	-ms-flex-align: start;
 	align-items: flex-start;
 	
-	padding-bottom: 53px;
+	padding-bottom: 49px;
 	position: relative;
 	left: 0;
 	top: 0;
+	margin-bottom: 43px
 }
 .jobs--feedbackR-top:after {
 	content: '';
@@ -3688,14 +3712,14 @@ div[class*="_new_tinting_ico"]:before {
 .jobs--feedbackR-top h2 {
 	color: #000000;
 	font-size: 14px;
-	margin: 0;
+	margin: 0 0 17px;
 	font-weight: 500;
 	display: block;
 }
 .jobs--feedbackR-top h3 {
 	color: #000000;
 	font-size: 14px;
-	margin: 0;
+	margin: 0 0 7px;
 	font-weight: 400;
 	display: block;
 }
@@ -3705,8 +3729,424 @@ div[class*="_new_tinting_ico"]:before {
 	margin: 0;
 	display: block;
 }
+
+.jobs--review {
+	font-size: 14px;
+	line-height: 24px;
+	color: #151b23;
+	padding: 0;
+	margin:0;
+	border: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 	
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%
+}
+.jobs--review:before {
+	position: absolute;
+	left: -26px;
+	top: -4px;
+	content: '';
+	background: url(../img/new/company/blockquote.svg) center no-repeat;
+	background-size: cover;
+	width: 15px;
+	height: 14px;
+}
+.jobs--review p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #151b23;
+	margin: 0
+}
+.jobs-feedback-row {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	top: 0;
+	padding-bottom: 78px;
+	margin-bottom: 17px
+}
+
+.jobs-feedback-slide {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.jobs-feedback-row .swiper-button-prev, .jobs-feedback-row .swiper-button-next {
+    top: 50%;
+    margin-top: 0;
+	transform: translateY(-50%);
+}
+/*
+---------------------------------------
+Страница преимущества
+---------------------------------------
+*/
+.advantages--table {
+	display: block;
+	width: 100%;
+}
+.advantages--table > h2 {
+	margin: 0 0 46px;
+	font-size: 25px;
+	line-height: 40.85px;
+	color: #151b23;
+}
+
+.advantages--table-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 	
+	margin-bottom: 50px;
+}
+.advantages--table_section-1 {
+	width: 332px;
+	padding-left: 71px;
+	position: relative;
+	left: 0;
+	top: 0;
+	min-height: 57px;
+	
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.advantages--table_section-1:after {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 57px;
+	content: '';
+	background-color: #e5e5e5;
+}
+.advantages--table_section-1 p {
+	color: #191a1b;
+	font-size: 14px;
+	line-height: 23px;
+	display: block;
+	width: 100%;
+}
+.advantages--table_section-1 img {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+.advantages--table_section-2 {
+	width: calc(100% - 332px);
+	padding-left: 43px;
+	
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.advantages--table_section-2 p {
+	display: block;
+	width: 100%;
+	color: rgba(43,48,50,0.8);
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.advantages--product-container {
+	display: block;
+}
+.advantages--product-container h2 {
+	display: block;
+	font-size: 25px;
+	line-height: 32px;
+	color: #151b23;
+	margin: 0 0 32px
+}
+.advantages--product {
+	position: relative;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	display: block;
+	padding-bottom: 46px
+}
+
+.advantages--links {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	margin-left: -12px;
+	margin-right: -12px;
+	padding-bottom: 30px
+}
+.advantages--links h2 {
+	display: block;
+	font-size: 25px;
+	line-height: 32px;
+	color: #151b23;
+	margin: 0 0 32px;
+	width: 100%;
+	padding: 0 12px
+}
+
+.advantages--links a {
+	padding: 0 15px;
+	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 20%;
+	margin-bottom: 24px
+}
+.advantages--links a span {
+	border: 1px solid #c9c9c9;
+	width: 100%;
+	padding: 36px 45px 34px 75px;
+	
+	font-size: 14px;
+	color: #191a1b;
+	line-height: 25px;
+	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 100%
+}
+.advantages--links a svg {
+	position: absolute;
+	right: 43px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 7px;
+	height: 15px;
+}
+.advantages--links a img {
+	position: absolute;
+	left: 43px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 34px;
+}
+/*
+---------------------------------------
+Страница сертификаты ( о компании )
+---------------------------------------
+*/
+.certificates--tabs-top {
+	display: block;
+	width: 100%;
+	margin-bottom: 25px;
+	margin-top: 25px
+}
+.certificates--tabs-top a {
+	display: inline-block;
+	color: rgba(0,0,0,0.77);
+}
+.certificates--tabs-top a:after {
+    position: relative;
+    left: 0;
+    top: -2px;
+    display: inline-block;
+    margin-left: 9px;
+    font-size: 4px;
+    font-family: 'slavdom' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e90c";
+    transition: transform .35s , color .35s;
+}
+.certificates--tabs-top a.active:after {
+    color: #d70022;
+    transform: scale(1,-1);
+    top: -4px;
+    transform-origin: center;
+}
+.certificates--tabs .new--comparison-label_item-title {
+	position: relative;
+	left: 0;
+	top: 0;
+	padding-left: 170px;
+}
+.certificates--tabs .new--comparison-label_item-title.open .new--comparison-label_item-text {
+	font-weight: 500;
+}
+.certificates--tabs .new--comparison-label_item-title .new--comparison-label_item-text {
+	border-bottom: 1px dotted #999999;
+	font-size: 17px
+}
+
+.certificates--tabs-shield {
+	position: absolute;
+	right: 88px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+}
+.certificates--tabs-brand_image {
+	position: absolute;
+	left: 29px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.certificates--carousel {
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 5px 35px 0;
+	overflow: hidden;
+}
+.certificates--item {
+	display: block;
+}
+.certificates--image {
+	display: block;
+	width: 100%;
+	height: 385px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 2px solid #eeeeee;
+	transition: box-shadow .35s;
+	margin-bottom: 26px;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.certificates--image:before {
+	position: absolute;
+	right: 45px;
+	bottom: 54px;
+	width: 23px;
+	height: 23px;
+	content: '';
+	background: url(../img/new/company/plus.svg) center no-repeat;
+	background-size: cover;
+	opacity: 0;
+	transition: opacity .35s;
+}
+.certificates--name {
+	font-weight: 400;
+	color: #333333;
+	font-size: 15px;
+	margin-bottom: 14px
+}
+.certificates--text {
+	font-size: 15px;
+	color: #7c7c7c;
+	line-height: 22px;
+	margin-bottom: 9px
+}
+.certificates--download {
+	color: #d70022;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 24px;
+}
+.certificates--download span {
+	color: rgba(0,0,0,0.55);
+}
+
+.certificates--item:hover .certificates--image {
+	box-shadow: 0 6px 13px 0 rgba(0,0,0,0.19);
+}
+.certificates--item:hover .certificates--image:before {
+	opacity: 1;
+}
+.certificates--item:hover .certificates--name {
+	font-weight: 500;
+}
+
+.certificates--tabs .new--comparison-label_item-content:not(.init){
+	display: block;
+}
+
+.certificates--carousel_pagination {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 29px 0 37px
+}
+.certificates--carousel_pagination-row {
+	display: inline-block;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 12px 0;
+	width: 133px
+}
+.certificates--carousel_pagination-row p {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	
+	color: rgba(139,139,139,0.6);
+	font-size: 15px;
+	line-height: 1;
+}
+.certificates--carousel_pagination-row p .certificates--carousel-now {
+	color: rgba(0,0,0,0.6);
+}
+.certificates--carousel_pagination-vertical {
+	height: 18px;
+	width: 1px;
+	background-color: #e5e5e5;
+	margin: 0 18px;
+}
+
 	
 	
 	
@@ -3740,6 +4180,16 @@ div[class*="_new_tinting_ico"]:before {
 		padding-right: 0!important
 	}
 }
+@media(max-width: 1300px){
+	/*
+	---------------------------------------
+	Страница преимущества
+	---------------------------------------
+	*/
+	.advantages--links a {
+		width: 25%
+	}
+}
 @media(max-width: 1200px){
 	/*
 	---------------------------------------
@@ -3760,6 +4210,14 @@ div[class*="_new_tinting_ico"]:before {
 	*/
 	.news--detail_image > img {
 		max-width: 550px;
+	}
+	/*
+	---------------------------------------
+	Страница преимущества
+	---------------------------------------
+	*/
+	.advantages--links a {
+		width: 33.333333%
 	}
 }
 @media(max-width: 1190px){
@@ -3785,6 +4243,17 @@ div[class*="_new_tinting_ico"]:before {
 		font-size: 13px;
 		padding-left: 20px;
 		padding-right: 20px
+	}
+	/*
+	---------------------------------------
+	Страница преимущества
+	---------------------------------------
+	*/
+	.advantages--table_section-1 {
+		width: 285px;
+	}
+	.advantages--table_section-2 {
+		width: calc(100% - 285px);
 	}
 }
 @media(max-width: 991px){
@@ -4321,6 +4790,48 @@ div[class*="_new_tinting_ico"]:before {
 		padding-bottom: 14px;
 		margin-bottom: 20px
 	}
+	/*
+	---------------------------------------
+	Страница вакансий
+	---------------------------------------
+	*/
+	.jobs--feedbackR {
+		padding-left: 15px;
+		width: 100%;
+		padding-top: 30px
+	}
+	.jobs--feedbackL {
+		width: 100%;
+		height: 50vh
+	}
+	.jobs--review {
+		padding-left: 41px;
+	}
+	.jobs--review:before {
+		left: 0
+	}
+	/*
+	---------------------------------------
+	Страница преимущества
+	---------------------------------------
+	*/
+	.advantages--table_section-1 {
+		width: 100%;
+		padding-bottom: 15px;
+		margin-bottom: 10px
+	}
+	.advantages--table_section-1:after {
+		width: 100px;
+		height: 1px;
+		left: 71px;
+		top: auto;
+		bottom: 0;
+		transform: translateY(0);
+	}
+	.advantages--table_section-2 {
+		width: 100%;
+		padding-left: 71px;
+	}
 }
 @media(max-width: 768px){
 	/*
@@ -4569,6 +5080,53 @@ div[class*="_new_tinting_ico"]:before {
 	.jobs--contacts a {
 		width: 100%
 	}
+	/*
+	---------------------------------------
+	Страница преимущества
+	---------------------------------------
+	*/
+	.advantages--links a {
+		width: 50%
+	}
+	/*
+	---------------------------------------
+	Страница сертификаты ( о компании )
+	---------------------------------------
+	*/
+	.certificates--tabs .new--comparison-label_item-title {
+		padding-left: 16px;
+		padding-top: 38px;
+		padding-bottom: 21px
+	}
+	.certificates--tabs .new--comparison-label_item-title .new--comparison-label_item-text {
+		font-size: 14px;
+		position: absolute;
+		left: 16px;
+		top: 16px;
+	}
+	.certificates--tabs-brand_image {
+		left: auto;
+		top: auto;
+		bottom: auto;
+		right: auto;
+		transform: translateY(0);
+		position: static;
+		display: inline-block;
+		max-height: 25px;
+		width: auto;
+		margin-right: 9px
+	}
+	.certificates--tabs-shield {
+		left: auto;
+		top: auto;
+		bottom: auto;
+		right: auto;
+		transform: translateY(0);
+		position: static;
+		display: inline-block;
+		width: auto;
+		height: 17px;
+	}
 }
 @media(max-width: 670px){
 	/*
@@ -4749,6 +5307,21 @@ div[class*="_new_tinting_ico"]:before {
 	.product-cards__category--mobile span {
 		display: inline;
 		border-bottom: 1px solid #b7b7b7
+	}
+	/*
+	---------------------------------------
+	Страница преимущества
+	---------------------------------------
+	*/
+	.advantages--links a {
+		width: 100%
+	}
+	.advantages--links a span {
+		height: auto;
+	}
+	.advantages--links {
+		-ms-flex-align: start;
+		align-items: flex-start;
 	}
 }
 @media(max-width: 500px){
