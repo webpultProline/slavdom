@@ -134,20 +134,16 @@ $(function(){
 	///window.location.hash.replace("#","")
 	checkOpenTab('users--tabs',window.location.hash.replace("#",""));
 	
-	$('.new--tabs_btn-- , .new--tabs_btn-mobile').click(function(){
+	$('.new--tabs_btn-- , .new--tabs_btn-mobile').click(function(event){
 		if(typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false && $(this).attr('href') != ''){
+			event.preventDefault();
+			history.pushState({}, "", this.href);
+			
 			$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text('');
 			$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text($(this).text());
 			
 			$($(this).attr('href')).parents('.new--tabs').find('.new--tab').removeClass('open--tab');
 			$($(this).attr('href')).addClass('open--tab');
-			
-
-			var offsetTopPlus = $('.header-floating').outerHeight(true);
-			
-			$([document.documentElement, document.body]).stop().animate({
-				scrollTop: $($(this).attr('href')).offset().top-offsetTopPlus
-			}, 200);
 			
 			$(this).parent().find('.new--tabs_btn--').removeClass('active');
 			$(this).addClass('active');
@@ -171,12 +167,6 @@ $(function(){
 			
 			$("#"+parent_tab).find('.new--tab').removeClass('open--tab');
 			$("#"+parent_tab).find("#"+tab).addClass('open--tab');
-			
-			var offsetTopPlus = $('.header-floating').outerHeight(true);
-			
-			$([document.documentElement, document.body]).stop().animate({
-				scrollTop: $("#"+parent_tab).find("#"+tab).offset().top-offsetTopPlus
-			}, 200);
 		} else {
 			var firstTab = $("#"+parent_tab).find('.new--tab').first();
 			var links = firstTab.attr('id');
@@ -409,6 +399,46 @@ $(function(){
 			changeNumberSlider();
 		});
 	}
+	//
+	//Поля для данных в модальном окне
+	//
+	$('.form__field--textarea textarea').keyup(function(){
+		if($(this).val() != ''){
+			$(this).parent().addClass('val');
+		} else {
+			$(this).parent().removeClass('val');
+		}
+	});
+	$('.form__field--textarea textarea').change(function(){
+		if($(this).val() != ''){
+			$(this).parent().addClass('val');
+		} else {
+			$(this).parent().removeClass('val');
+		}
+	});
+	if($('.form__field--textarea textarea').length > 0){
+		$('.form__field--textarea textarea').each(function(){
+			if($(this).val() != ''){
+				$(this).parent().addClass('val');
+			} else {
+				$(this).parent().removeClass('val');
+			}
+		});
+	}
+	
+	$('.form__field--file input[type="file"]').change(function(event){
+		console.log(this.files.length);
+		if(this.files.length > 0){
+			if(this.files[0].size > 10){
+				if(this.files[0].name != ''){
+					$(this).parent().find('.form__field--file--name').text(this.files[0].name);
+				}
+			}
+		} else {
+			$(this).parent().find('.form__field--file--name').text($(this).parent().find('.form__field--file--name').attr('data-def_name'));
+		}
+	});
+	
 	/*
 	//
 	//Страница поиска
