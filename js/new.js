@@ -439,6 +439,55 @@ $(function(){
 		}
 	});
 	
+	//
+	//Детальная страница конкурсника
+	//
+	if($('.contest_participants--carousel').length > 0){
+		var productCardsSlider = new Swiper('.contest_participants--carousel', {
+			slidesPerView: 4,
+			slidesPerGroup: 4,
+			spaceBetween: 20,
+			navigation: {
+				prevEl: '.product-cards__arrow.swiper-button-prev',
+				nextEl: '.product-cards__arrow.swiper-button-next',
+			},
+			breakpoints: {
+				1190: {
+					slidesPerView: 3,
+					slidesPerGroup: 3,
+					spaceBetween: 20
+				},
+				991: {
+					slidesPerView: 2,
+					slidesPerGroup: 2,
+					spaceBetween: 20
+				},
+				670: {
+					slidesPerView: 1,
+					slidesPerGroup: 1
+				}
+			},
+		});
+	}
+	if($('.new--product-card__slider-thumbs').length) {
+		//new--product-card__slider-thumbs
+		$('.product-card__slider-thumbs').slick('unslick');
+		$('.new--product-card__slider-thumbs').slick({
+		  slidesToShow: 8,
+		  slidesToScroll: 1,
+		  asNavFor: '.product-card__slider-main',
+		  prevArrow: '<div class="swiper-button-prev"><svg class="swiper-button-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-l"></use></svg></div>',
+		  nextArrow: '<div class="swiper-button-next"><svg class="swiper-button-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use></svg></div>',
+		  focusOnSelect: true,
+		  responsive: [{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 5
+			  }
+			},
+		  ]
+		});
+	}
 	/*
 	//
 	//Страница поиска

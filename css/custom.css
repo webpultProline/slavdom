@@ -2820,6 +2820,17 @@ table.about-table td {
     color: rgba(0, 0, 0, 0.6);
     font-size: 13px; } }
 
+@media (max-width: 991px) {
+  .catalog-terms--desktop {
+    display: none; }
+  .catalog-terms--mobile {
+    display: block;
+    margin-bottom: 35px; }
+    .catalog-terms {
+      margin-top: -25px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
   .files-catalog--sertificates .files-catalog__file {
     padding-left: 33px; }
@@ -5111,6 +5122,13 @@ sup.star {
   min-width: 320px;
   transform: translate(-50%, -100%); }
 
+@media (max-width: 1280px) {
+  .tooltip--html {
+    width: 316px;
+    min-width: 316px;
+  }
+}
+
 .tooltip--html:before {
   top: 100%;
   left: 50%;
@@ -7084,16 +7102,45 @@ a.file.text-c-black:hover {
   .catalog .c-level-zero__row:not(:last-child) {
     margin-bottom: 0; } }
 
-@media only screen and (max-width: 450px) {
-  .list-catalog__wrapper .list-catalog-drop__column {
-    max-width: 100%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-left: 0;
-    margin-right: 0; }
-  .list-catalog__wrapper.list-catalog-drop__columns {
-    margin-left: 0;
-    margin-right: 0; } }
+.list-catalog__wrapper .list-catalog-drop__column .list-catalog-drop__item {
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.list-catalog__wrapper .list-catalog-drop__column .list-catalog-drop__category,
+.list-catalog__wrapper .list-catalog-drop__column .list-catalog-drop__sub-category {
+  display: inline;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+  @media only screen and (max-width: 450px) {
+      .list-catalog__wrapper .list-catalog-drop__column {
+          max-width: 100%;
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+          margin-left: 0;
+          margin-right: 0;
+      }
+
+      .list-catalog__wrapper.list-catalog-drop__columns {
+          margin-left: 0;
+          margin-right: 0;
+      }
+
+      .list-catalog__wrapper .list-catalog-drop__column {
+        max-height: 100%;
+      }
+
+      .list-catalog__wrapper .list-catalog-drop__column[aria-hidden="false"] .list-catalog-drop__column-wrap {
+        box-shadow: none;
+      }
+
+      .list-catalog__wrapper .list-catalog-drop__column .list-catalog-drop__item {
+        padding-top: 9px;
+        padding-bottom: 6px;
+      }
+  }
 
 @media only screen and (max-width: 600px) {
   .product-cards__add-cart:before {

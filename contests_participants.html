@@ -304,8 +304,12 @@
 				<h1 class="title-page">Лучший дом из материалов Славдом 2015</h1>
 				
 				<div class="contest--detail">
-					<!-- Для вывода уведомления что конкурс открыт нужно добавить класс 'open' в тег h2 -->
-					<h2>Описание и условия участия в конкурсе</h2>
+					<!-- Для вывода уведомления что конкурс открыт нужно добавить класс 'open' в тег p -->
+					<div class="contest--title">
+						<p class="contest--title-status">Завершен</p>
+						<h2>Описание и условия участия в конкурсе</h2>
+						<a href="#"><span>Правила конкурса</span></a>
+					</div>
 					<div class="typography new_typography">
 						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
 					</div>
@@ -1100,7 +1104,7 @@
         <div class="modal-overlay"></div>
         <div class="modal__container" tabindex="-1" data-micromodal-close="">
             <div class="modal__content modal__content--form-normal modal__content--from-call-back" id="modal-call-me_">
-                <p class="modal__title">Заказать обратный звонок</p>
+                <p class="modal__title new--modal__title">Принять участие в конкурсе</p>
                 <button class="modal__close animation-base" data-micromodal-close=""></button>
                 <form action="#" class="form">
                     <label class="form__field">
@@ -1136,9 +1140,21 @@
 					</label>
 
                     <div class="form__button-box">
-                        <button class="form__send-button form__button button button--normal button--border button--disabled w-50" disabled="">Отправить</button>
+                        <button class="form__send-button form__button button button--normal button--border button--disabled w-50 js-close-modal js-open-modal" data-container="modal-contests--success" disabled="">Отправить</button>
                     </div>
                 </form>
+            </div>
+
+        </div>
+    </div>
+	
+	<div class="modal micromodal-slide" id="modal-contests--success" aria-hidden="false">
+        <div class="modal-overlay"></div>
+        <div class="modal__container" tabindex="-1" data-micromodal-close="">
+            <div class="modal__content modal__content--form-normal modal__content--from-call-back" id="modal-call-me_">
+                <p class="modal__title new--modal__title--success">Ваша работа будет опубликована после проверки модератором. </p>
+                <button class="modal__close animation-base" data-micromodal-close=""></button>
+               <p class="new--modal__title--success-text">Спасибо, что приняли участие!</p>
             </div>
 
         </div>
