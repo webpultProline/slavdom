@@ -1,4 +1,56 @@
 $(function(){
+	/*Карта в схеме проезда*/
+	if($('#passage--map').length > 0){
+		ymaps.ready(function () {
+			var cord1 = $('#passage--map').attr('data-cord1');
+			var cord2 = $('#passage--map').attr('data-cord2');
+			
+			var myMap = new ymaps.Map('passage--map', {
+				center: [cord1,cord2],
+				zoom: 16
+			});
+			myPlacemark = new ymaps.Placemark([cord1,cord2],{
+				hideIcon: false
+			},{
+				iconLayout: 'default#image',
+				iconImageHref: 'img/new/dealers/logo.svg',
+				iconImageSize: [41, 46],
+				iconImageOffset: [-20.5, -46]
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+		});
+		
+		$('.passage--save').click(function(){
+			
+			$('.new--map_print').attr('style','display: block!important');
+			
+			$('.passage--map').hide();
+			
+			
+			var doc = new jsPDF();
+			
+			var canvas = document.getElementById("passage--row");
+			html2canvas(canvas).then(function(canvas) {
+				var width = $(canvas).width();
+				var coef = width/210;
+				var height = $(canvas).height()/coef;
+				
+				window.canvas1_height = height;
+				window.canvas1 = canvas;
+				
+				$('.new--map_print').attr('style','');
+				$('.passage--map').show();
+			});
+			
+			doc.addImage(window.canvas1, 'JPEG', 0, 20, 210, window.canvas1_height);
+			doc.save('sample-file.pdf');
+			
+		});
+	}
+	/**/
+	
+	
 	if($('.new--input_phone').length > 0){
 		$('.new--input_phone').mask('+7(999)999-99-99');
 	}
@@ -88,7 +140,7 @@ $(function(){
 	if($('._new_pickups-nav-indicator').length > 0){
 		setTabIndicatorDelivery();
 	}
-	$('.new--tab-navigation').find('li').click(function(){
+	/*$('.new--tab-navigation').find('li').click(function(){
 		$('._new_pickups-nav').find('li').removeClass('active');
 		$(this).addClass('active');
 		
@@ -96,7 +148,7 @@ $(function(){
 		$(this).parents('._new_pickups').find('#'+$(this).attr('data-action_tab')).addClass('active');
 		
 		setTabIndicatorDelivery();
-	});
+	});*/
 	// показать больше
 	$('.newScrollHidden-btn').bind('click', function(e) { 
 		e.preventDefault();
@@ -140,16 +192,12 @@ $(function(){
 	///Табы в личном кабинете
 	///----------------------
 	///window.location.hash.replace("#","")
-	checkOpenTab('users--tabs',window.location.hash.replace("#",""));
+	/*checkOpenTab('users--tabs',window.location.hash.replace("#",""));
 	
 	$('.new--tabs_btn-- , .new--tabs_btn-mobile').click(function(event){
 		if(typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false && $(this).attr('href') != ''){
 			event.preventDefault();
 			history.pushState({}, "", this.href);
-			/*if($('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').length > 0){
-				$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text('');
-				$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text($(this).text());
-			}*/
 			
 			$($(this).attr('href')).parents('.new--tabs').find('.new--tab').removeClass('open--tab');
 			$($(this).attr('href')).addClass('open--tab');
@@ -169,8 +217,6 @@ $(function(){
 					} else {
 						$(this).addClass('active');
 						if($('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').length > 0){
-							/*$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text('');
-							$('.breadcrumbs.new_show_tablet-block .breadcrumbs__current-page').text($(this).text());*/
 						}
 					}
 				}
@@ -199,7 +245,7 @@ $(function(){
 	$('.new--user_orders-table_top a').click(function(){
 		$('.new--user_orders-table_top a').removeClass('active');
 		$(this).addClass('active');
-	});
+	});*/
 	/*
 	//
 	//Страница сравнения

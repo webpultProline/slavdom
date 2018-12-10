@@ -297,13 +297,13 @@
 				<h1 class="title-page new_hidden_tablet">Личный кабинет</h1>
 				<div class="sidebar-and-blocks flex flex--j-between flex--a-start user--page">
                     <div class="column-one-base sidebar">
-                        <a href="#user-main" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
+                        <a href="/user-main.html" class="new--tabs_btn new_hidden_tablet new--tabs_btn-- active">
 							Общая информация
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
 							</svg>
 						</a>
-                        <a href="#user-orders" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
+                        <a href="/user-orders.html" class="new--tabs_btn new_hidden_tablet new--tabs_btn--">
 							История заказов
 							<svg class="list-catalog__chevrone">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
@@ -321,7 +321,7 @@
 
                     <div class="column-one-invert">
 						<div class="new--tabs" id="users--tabs">
-							<div class="new--tab" id="user-main">
+							<div class="new--tab open--tab" id="user-main">
 								<div class="new_hidden_block new_show_tablet-flex new--user-main__mobile d-flex flex-row flex-wrap justify-content-between align-items-center">
 									<h2 class="new--user-title">Общая информация</h2>
 									
@@ -332,7 +332,7 @@
 										<span class="user-box__title">Выйти</span>
 									</button>
 									
-									<a href="#user-orders" class="new--tabs_btn-mobile">
+									<a href="/user-orders.html" class="new--tabs_btn-mobile">
 										История заказов
 										<svg class="list-catalog__chevrone">
 											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
@@ -398,225 +398,6 @@
 									</div>
 									<button class="button--border button--acc button--normal">Сменить пароль</button>
 								</form>
-							</div>
-							<div class="new--tab" id="user-orders">
-								<div class="new_hidden_block new_show_tablet-flex new--user-main__mobile d-flex flex-row flex-wrap justify-content-between align-items-center">
-									<h2 class="new--user-title">Личный кабинет</h2>
-									
-									<button class="user-box__sign-in header-top__text-color link link--h-acc">
-										<svg class="user-box__icon">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-user"></use>
-										</svg>
-										<span class="user-box__title">Выйти</span>
-									</button>
-									
-									<a href="#user-main" class="new--tabs_btn-mobile">
-										Общая информация
-										<svg class="list-catalog__chevrone">
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-										</svg>
-									</a>
-								</div>
-								
-								<div class="new--user_orders-top">
-									<h2 class="new--user-title">История заказов</h2>
-									<div class="contacts__notices flex flex--a-center">
-										<span class="important important--red"></span>
-										<p class="typography">
-											<span class="text-c-red">Через сайт можно осуществить только полную оплату заказа</span> Для частичной оплаты заказа воспользуйтесь наличным расчетом
-										</p>
-									</div>
-									
-						<div class="catalog-controls flex flex--j-between" data-select2-id="11">
-                            <div class="catalog-controls__left" data-select2-id="10">
-                                <div class="catalog-controls__sort flex flex--a-center" data-select2-id="9">
-                                    <div class="catalog-controls__text">Сортировать</div>
-                                    <div class="catalog-controls__select" data-select2-id="8">
-                                        <select class="from__select js-base-select select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                            <option value="0">По № заказа</option>
-                                            <option value="1">По статусу</option>
-                                            <option value="3">По дате</option>
-                                            <option value="4">По стоимости</option>
-                                            <option value="5">По оплате</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								</div>
-								
-								<div class="new--user_orders-body">
-									<div class="new--user_orders-table_top">
-										<p class="new--user_order-table-section"><a href="#" class="active">№</a></p>
-										<p class="new--user_order-table-section"><a href="#">Статус</a></p>
-										<p class="new--user_order-table-section"><a href="#">Дата</a></p>
-										<p class="new--user_order-table-section"><a href="#">Стоимость</a></p>
-										<p class="new--user_order-table-section"><a href="#">Оплата</a></p>
-									</div>
-									
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html"><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<a href="#" class="new--user_order-table-section new--paid_link">
-											Оплатить заказ
-										</a>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата картой</p>
-											<p class="new--paid_type-info">Оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<a href="#" class="new--user_order-table-section new--paid_link">
-											Оплатить заказ
-										</a>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<button class="new--paid_type-help"></button>
-											<p class="new--paid_type-title">Оплата картой</p>
-											<p class="new--paid_type-info">Частично</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--successfully">Принят</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата картой</p>
-											<p class="new--paid_type-info">Оплачен</p>
-										</div>
-									</div>
-									<div class="new--user_order-table">
-										<div class="new--user_order-table-section">
-											<a href="/user-detail_order.html" ><span>Заказ №12873</span></a>
-										</div>
-										<p class="new--user_order-table-section new--cancellation">Отменен</p>
-										<p class="new--user_order-table-section" data-title_tablet="Дата"><span>от 18.12.2017</span></p>
-										<p class="new--user_order-table-section" data-title_tablet="Сумма к оплате"><span>350 000<sup>50</sup> ₽</span></p>
-										
-										<div class="new--user_order-table-section new--paid_type">
-											<p class="new--paid_type-title">Оплата наличными</p>
-											<p class="new--paid_type-info">Не оплачен</p>
-										</div>
-									</div>
-								</div>
-								
-								<div class="pagination-wrap flex flex--a-center">
-									<div class="pagination">
-										<a href="#" class="pagination__el pagination__el--disabled pagination__el--arr">
-											<svg class="pagination__icon">
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-dche-l"></use>
-											</svg>
-										</a>
-										<a href="#" class="pagination__el pagination__el--disabled pagination__el--arr">
-											<svg class="pagination__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-l"></use></svg>
-										</a>
-										<div class="pagination__page-numbs">
-											<a href="#" class="pagination__el _current">1</a>
-											<a href="#" class="pagination__el">2</a>
-											<a href="#" class="pagination__el">3</a>
-											<a href="#" class="pagination__el">4</a>
-											<a href="#" class="pagination__el">5</a>
-										</div>
-										<a href="#" class="pagination__el pagination__el--arr">
-											<svg class="pagination__icon">
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-che-r"></use>
-											</svg>
-										</a>
-										<a href="#" class="pagination__el pagination__el--arr">
-											<svg class="pagination__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-dche-r"></use></svg>
-										</a>
-									</div>
-									<div class="pagination-num">
-										<span class="pagination-num__on-page">15</span>
-										<span class="pagination-num__total-page">из 130</span>
-									</div>
-								</div>
-								
 							</div>
 						</div>
                     </div>
