@@ -1820,6 +1820,11 @@
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.user_reg_tab .new_label--inputs input {
+		padding-top: 0!important;
+		padding-bottom: 0!important;
+		line-height: 53px!important
+	}
 	.new--form_user .new_label--inputs input {
 		height: 40px!important;
 		line-height: 38px!important;
@@ -1899,8 +1904,9 @@
 фиксы
 ====================================================
 */
-.form__field--textarea textarea , .order-form__text-group .order-form__input textarea {
+.form__field--textarea textarea , .order-form__text-group textarea.order-form__input {
 	-webkit-appearance: none;
+	border-radius: 0
 }
 .related-info__box {
 	-ms-flex-preferred-size: 100%!important;
@@ -5173,7 +5179,7 @@ div[class*="_new_tinting_ico"]:before {
     margin-right: 9px;
     display: block;
 }
-.contest_participants-info_middle > button:hover:before {
+.contest_participants-info_middle > button:hover:before , .contest_participants-info_middle > button.liked:before {
     content: "\e91d";
 }
 .contest_participants-info_bottom {
@@ -6289,7 +6295,19 @@ div[class*="_new_tinting_ico"]:before {
 .answer--row .files-catalog__item-title-text {
 	border-bottom: 0
 }
-	
+/*госты и снипиты*/
+.new--page_nav--gosts.new--page_nav.new--page-nav.page-nav__with-sep {
+	padding-left: 0;
+	padding-right: 0
+}
+.new--page_nav--gosts.new--page_nav.new--page-nav.page-nav__with-sep .page-nav__item {
+	padding-left: 30px!important;
+	padding-right: 30px!important
+}
+.new--user__register__gotomain {
+	margin-bottom: 35px;
+	display: block
+}
 	
 	
 	
@@ -6474,7 +6492,7 @@ div[class*="_new_tinting_ico"]:before {
 	---------------------------------------
 	*/
 	.jobs-feedback-row .swiper-button-prev, .jobs-feedback-row .swiper-button-next {
-		top: 140px;
+		top: 22vh;
 		transform: translateY(0);
 	}
 	.jobs--feedbackR-top {
@@ -6604,6 +6622,9 @@ div[class*="_new_tinting_ico"]:before {
 		margin-top: 0;
 		margin-bottom: 0;
 		display: inline
+	}
+	.news--detail--pagination-link:hover > span {
+		border-bottom-color: transparent
 	}
 	.contest_participants--products .news--detail--pagination .news--detail--pagination-link:not(.news--detail--pagination-link--right){
 		margin-bottom: 15px
@@ -7290,6 +7311,10 @@ div[class*="_new_tinting_ico"]:before {
 	}
 }
 @media(max-width: 768px){
+	.new--user__register__gotomain {
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
 	/*
 	---------------------------------------
 	Страница покупателям
@@ -8031,6 +8056,7 @@ div[class*="_new_tinting_ico"]:before {
 	}
 	.dealers--brands .brand-card .brand-card__box {
 		height: 150px;
+		min-height: 150px;
 		padding: 6px 9px
 	}
 	
