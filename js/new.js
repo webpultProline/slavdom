@@ -188,6 +188,9 @@ $(function(){
 		$(this).parent().find('input[type="password"]').val('');
 		setStatusForInput($(this).parent().find('input[type="password"]'));
 	});
+	
+		//not__empty
+	
 	///----------------------
 	///Табы в личном кабинете
 	///----------------------
