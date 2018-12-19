@@ -560,6 +560,15 @@ $(function(){
 	//Страницы покупателям
 	//
 	if($('.dealers--people-departament').length > 0){
+		$('.person__box-wrapper .bottom-link a').on("click", function(evt){
+			evt.preventDefault();
+			$('.dealers--pepole-wrapper').find('.person__box').not($(this).parents('.person__box')).each(function(){
+				if($(this).hasClass('opened')){
+					$(this).removeClass('opened');
+					$(this).find('.person__contact-info').hide();
+				}
+			});
+		});
 		function reInitClickOnCard(){
 			$('.person__box-wrapper .bottom-link a').off();
 			$('.person__box-wrapper .bottom-link a').on("click", function(evt) {
@@ -659,28 +668,72 @@ $(function(){
 		block.addClass('open');
 	});
 	
+	function _checkPhone(value){
+		var phoneFilter = /^[+]*[7]\s[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+		if(!phoneFilter.test(value)){
+			return false;
+		}
+		return true;
+	}
+	function _validate(email){
+		var emailFilter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/g;
+		if (!emailFilter.test(email)) {
+			return false;
+		}
+		return true;
+	}
+	
 	function checkForValue(block){
-		var input_length = block.find('input:not([type="checkbox"])').length;
+		var input_length = block.find('input:not([type="hidden"])').length;
 		var check_input = 0;
 		block.find('input:not([type="checkbox"])').each(function(){
 			if($(this).val() != ''){
 				if($(this).hasClass('form__input--phone-full') == true){
-					console.log($(this).val().indexOf('_'))
-					if($(this).val().indexOf('_') == -1){
+					if(_checkPhone($(this).val()) == true){
 						check_input++;
 					}
 				} else {
-					check_input++;
+					if($(this).attr('type') == 'password'){
+						console.log();
+						if($(this).val() == $(this).parents('.user_reg_tab').find('input[type="password"]').not($(this)).val()){
+							check_input++;
+						}
+					} else {
+						if($(this).attr('type') == 'email'){
+							if(_validate($(this).val()) == true){
+								check_input++;
+								$(this).parents('.new_label--inputs').removeClass('error');
+							} else {
+								$(this).parents('.new_label--inputs').addClass('error');
+							}
+						} else {
+							check_input++;
+						}
+					}
 				}
 			}
 		});
 		
+		if(block.find('input[type="checkbox"]').prop('checked') == true){
+			check_input++;
+		}
+		
 		if(input_length == check_input){
 			block.find('.form__send-button').removeClass('button--disabled button--border').addClass('button--fill button--acc').removeAttr('disabled');
+		} else {
+			block.find('.form__send-button').addClass('button--disabled button--border').removeClass('button--fill button--acc').prop('disabled',true);
 		}
 	}
 	
+	
+	
 	$('.user_reg_tab input').keyup(function(){
+		var parent_ = $(this).parents('.user_reg_tab');
+		checkForValue(parent_);
+	}).focusout(function(){
+		var parent_ = $(this).parents('.user_reg_tab');
+		checkForValue(parent_);
+	}).change(function(){
 		var parent_ = $(this).parents('.user_reg_tab');
 		checkForValue(parent_);
 	});
