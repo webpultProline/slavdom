@@ -2482,7 +2482,8 @@
 	border-bottom: 0
 }
 ._new_pickups-navs .title-section--small {
-	margin-bottom: 0
+	margin-bottom: 0;
+	width: 100%
 }
 
 ._new_pickups-body {
@@ -2684,7 +2685,7 @@
 .new_type-payments > li {
 	list-style: none;
 	line-height: 1;
-	margin: 0 0 43px;
+	margin: 0 0 38px;
 	padding: 0;
 }
 .new_type-payments .form__radio-label {
@@ -2696,14 +2697,30 @@
 }
 .new_type-payments .order-form__label-subtitle {
 	padding-left: 0;
-	font-size: 13.88px;
-	line-height: 23.5px;
+	font-size: 14px;
+	line-height: 23px;
+	color: rgba(51,51,51,0.78);
+	opacity: 1
 }
+
+.section--payment .order-form__label-subtitle a {
+	color: rgba(215,0,34,0.78);
+	text-decoration: none!important
+}
+.section--payment .order-form__label-subtitle a span {
+	border-bottom: 1px solid rgba(215,0,34,0.78)
+}
+
 .section--payment .title-section {
-	max-width: 850px;
+	max-width: 730px;
+	font-size: 25px;
+	line-height: 37px;
+	margin-top: -17px;
+	margin-bottom: 37px;
 }
 .section--payment .form__radio-label {
-	padding-left: 0!important
+	padding-left: 0!important;
+	margin-bottom: 16px;
 }
 
 /*
@@ -3981,7 +3998,7 @@ div[class*="_new_tinting_ico"]:before {
 	justify-content: flex-start;
 }
 .jobs-feedback-row .swiper-button-prev, .jobs-feedback-row .swiper-button-next {
-    top: 50%;
+    top: 217.5px;
     margin-top: 0;
 	transform: translateY(-50%);
 }
@@ -7226,6 +7243,10 @@ div[class*="_new_tinting_ico"]:before {
 	}
 }
 @media(max-width: 991px){
+	.section--payment .title-section {
+		margin-top: 0
+	}
+	
 	.offset-bottom--new_table {
 		padding-bottom: 0
 	}
@@ -7417,7 +7438,7 @@ div[class*="_new_tinting_ico"]:before {
 	Страница вакансий
 	---------------------------------------
 	*/
-	.jobs-feedback-row .swiper-button-prev, .jobs-feedback-row .swiper-button-next {
+	.dealers--feedback .jobs-feedback-row .swiper-button-prev, .dealers--feedback .jobs-feedback-row .swiper-button-next {
 		top: 22vh;
 		transform: translateY(0);
 	}
@@ -8233,6 +8254,10 @@ div[class*="_new_tinting_ico"]:before {
 	.jobs--review:before {
 		left: 0
 	}
+	
+	.jobs-feedback-row .swiper-button-prev, .jobs-feedback-row .swiper-button-next {
+		top: 25vh
+	}
 	/*
 	---------------------------------------
 	Страница преимущества
@@ -8257,6 +8282,10 @@ div[class*="_new_tinting_ico"]:before {
 	}
 }
 @media(max-width: 768px){
+	.section--payment .title-section {
+		font-size: 20px;
+		line-height: 25px;
+	}
 	.new--user__register__gotomain {
 		margin-bottom: 15px;
 		font-size: 12px;
@@ -9275,8 +9304,8 @@ div[class*="_new_tinting_ico"]:before {
 		font-size: 14px
 	}
 	
-	.jobs-feedback-row .swiper-button-prev, .jobs-feedback-row .swiper-button-next {
-		top: 11.5vh
+	.jobs-feedback-row .swiper-button-prev , .jobs-feedback-row .swiper-button-next {
+		top: 25vh
 	}
 	
 	
